@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c9fc833-d561-4664-917a-9c5dd297aa6d">
+  <producedTypes>
+    <objectType typeId="bf9f177f-11a7-44d2-bb4a-61b79ab6ee69" valueTypeId="5e5aeeb5-76e0-4980-b5cc-4147f3e23ab0"/>
+    <managerType typeId="97f1c51b-199c-4ea0-a17c-26615f3bb6f9" valueTypeId="44471bfe-eb78-40b3-bf4b-f5e518e1e798"/>
+  </producedTypes>
+  <name>ЗагрузкаРазделаКурса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка раздела курса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаРазделаКурса.Form.Форма</defaultForm>
+  <attributes uuid="84f909cc-cb07-45ba-a5c4-a3911ea92f4c">
+    <name>JsessionID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Jsession ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="711bcf25-7180-44da-ab18-75e17f1a9935">
+    <name>ТипСайта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сайта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="2d7b40b0-024e-4ab8-92bd-6eec950246a3">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+  </attributes>
+  <attributes uuid="a0f9e0a1-1138-439c-a1cc-b80eae6be313">
+    <name>Раздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>DataProcessor.ЗагрузкаРазделаКурса.Attribute.Курс</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="9da1a7d3-b88c-4fc5-ac6a-22ffecc1e092">
+    <name>DL_RES</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Раздела</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="616d563f-6a54-4d43-aafe-aaa737ddb421">
+    <name>НомерРаздела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер раздела</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7be61002-dc2a-437c-ae4a-c85dfddd6fa6">
+    <name>ДопПараметрРаздела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп параметр раздела</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d458453-73c2-4330-96a0-8c6fc1dfdc32">
+    <name>Предприятие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предприятие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="ba252d2e-ecdc-412c-91f2-e7fa81bc9b26">
+    <name>ДваСимвола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Два символа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="009c43d0-e5ce-482c-a773-fad6db04fd00">
+    <name>УменьшитьНаименованиеПредприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уменьшить наименование предприятия</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ce6d573d-1456-47e3-8006-bef3ae51bb54">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

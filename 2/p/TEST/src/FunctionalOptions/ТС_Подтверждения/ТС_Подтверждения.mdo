@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2806955-0fa1-44ed-a76a-04f632541b37">
+  <name>ТС_Подтверждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтверждения тестов</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьПодтверждения</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ТС_Тесты.TabularSection.удПодтверждение</content>
+  <content>Catalog.ТС_Тесты.Command.ПечатьПодтверждения</content>
+  <content>Document.ТС_РезультатТестирования.Attribute.ЭтоПодтверждениеОтвета</content>
+  <content>InformationRegister.ТС_РезультатыТестирований.Dimension.ЭтоПодтверждениеОтвета</content>
+</mdclass:FunctionalOption>

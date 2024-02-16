@@ -1,0 +1,5 @@
+Microsoft Windows [Version 10.0.19044.3448]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+c:\1C_REPO_EDT>Reinitialized existing Git repository in C:/1C_REPO_EDT/.git/
+Reinitialized existing Git repository in C:/1C_REPO_EDT/.git/

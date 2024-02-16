@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4e5d7cb-ab1c-4bc9-b967-642ceaede848">
+  <name>ТС_Замечания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замечания к тестам</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьЗамечания</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.ТС_ЗамечанияКТестам</content>
+  <content>Enum.ТС_ВидыЗамечаний</content>
+</mdclass:FunctionalOption>

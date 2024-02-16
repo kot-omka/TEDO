@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e097bee-ed69-4b48-9046-d19a9a8ae55a">
+  <producedTypes>
+    <objectType typeId="cb90285f-d27e-41a6-936f-008933cf651d" valueTypeId="3d961d3a-1b3f-42e8-a856-3918710a829d"/>
+    <managerType typeId="1221fabb-8b5d-46a2-aa9f-8517ba744627" valueTypeId="258b2f66-71eb-4aa3-9787-b73adf7149ca"/>
+  </producedTypes>
+  <name>ПравильныеОтветы_Устаревшие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правильные ответы (не использовать)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПравильныеОтветы_Устаревшие.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПравильныеОтветы_Устаревшие.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="c0660ed7-760b-4113-8cb7-b8ae7bf18105">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="72c20629-4e39-40ea-81fa-f69ea0699576">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

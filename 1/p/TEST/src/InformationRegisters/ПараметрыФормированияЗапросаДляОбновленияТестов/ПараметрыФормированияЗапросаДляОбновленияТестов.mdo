@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="554484f7-85f1-435b-a909-efcaa06a6655">
+  <producedTypes>
+    <selectionType typeId="b94b1fe5-6bb0-4676-a3e4-44730c99a2bb" valueTypeId="22cc7578-bb1d-44c1-9ac0-2f98855f1f44"/>
+    <listType typeId="9ac22e39-d0f6-4780-bdaa-6e7369c513c0" valueTypeId="ed610fbc-1932-446b-b350-1948b0113429"/>
+    <managerType typeId="1c9d9f4d-f1c6-43d5-a1fc-a90eecbf79d1" valueTypeId="24cbb92f-868e-4949-b978-b1d25ae95255"/>
+    <recordSetType typeId="e94e4d94-0eb1-4583-88c9-e7ad5baa2680" valueTypeId="9d7fe8b0-a76b-4a11-9961-51b4075e7969"/>
+    <recordKeyType typeId="3e90ae58-0f93-43ae-8cb0-68f8f9a9b899" valueTypeId="680c347a-9a57-466e-97ba-f0ff96f5d5c4"/>
+    <recordType typeId="301d8c89-5d7c-4fd1-8a6a-83aa0d7d298c" valueTypeId="1bf457d3-c927-4713-88bd-c1c3a6b5605c"/>
+    <recordManagerType typeId="72e0353c-78b9-4225-96c4-a8b4ac05ad9c" valueTypeId="fe9f18d6-c7c7-42a5-b8f8-59b1209f1397"/>
+  </producedTypes>
+  <name>ПараметрыФормированияЗапросаДляОбновленияТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры формирования запроса для обновления тестов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1118e167-cb23-4ba0-ace8-ee47a68a9183">
+    <name>НомерРаздела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер раздела</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="26191741-d69e-4f62-a2d8-99a1a551f1cb">
+    <name>Free</name>
+    <synonym>
+      <key>ru</key>
+      <value>Free предприятие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="0683251e-fa75-4a81-8346-92a257c47f84">
+    <name>Dist</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dist предприятие</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="62ba498e-03b3-4836-aa63-dc89c5fd31bd">
+    <name>DL_RES_Free</name>
+    <synonym>
+      <key>ru</key>
+      <value>DL RES Free</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="710984bb-696d-405d-8055-49b9b91d5d81">
+    <name>DL_RES_Dist</name>
+    <synonym>
+      <key>ru</key>
+      <value>DL RES Dist</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="3b98675c-36e7-43b5-afa9-bee3cba1ce83">
+    <name>FreeДваСимвола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Free два символа у раздела в запросе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ebf87b71-abc2-4316-8bae-a7ad63003573">
+    <name>DistДваСимвола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dist два символа у раздела в запросе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="5d0d75f0-0b3e-43db-973e-bc080477d3e7">
+    <name>FreeУменьшитьНаименованиеПредприятияВЗапросе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Free уменьшить наименование предприятия в запросе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="6a2111a3-7197-41cc-b30e-d6fe7df40967">
+    <name>DistУменьшитьНаименованиеПредприятияВЗапросе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dist уменьшить наименование предприятия в запросе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <resources uuid="46469d90-b0bb-4429-9e60-5c15a2b19020">
+    <name>FreeНомерРазделаСКоторогоУменьшатьНаименованиеПредприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Free номер раздела с которого уменьшать наименование предприятия</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>14</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>10</value>
+    </fillValue>
+  </resources>
+  <resources uuid="6c43b387-58ee-4deb-bdc9-415d48d4f87d">
+    <name>DistНомерРазделаСКоторогоУменьшатьНаименованиеПредприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dist номер раздела с которого уменьшать наименование предприятия</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>14</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>10</value>
+    </fillValue>
+  </resources>
+  <resources uuid="6f157e01-f688-4ca8-940a-de34ecbc1aff">
+    <name>ДопПараметрРаздела_Free</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. параметр раздела free</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="2d2e681d-b772-4dee-a41b-836361fcca62">
+    <name>ДопПараметрРаздела_Dist</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. параметр раздела dist</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f0d2711d-0d43-466a-bfa6-88c154e8e653">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

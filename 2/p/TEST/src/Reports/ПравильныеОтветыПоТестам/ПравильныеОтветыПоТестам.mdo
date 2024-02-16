@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1917cc64-bfdd-4545-a88d-e808709b9bd0">
+  <producedTypes>
+    <objectType typeId="1bb6721a-72f6-4ed6-8f55-da594ecadab6" valueTypeId="a5520ea7-11b1-48a3-bc71-0a9a07bee54f"/>
+    <managerType typeId="09294b36-07d5-4e2e-b3a5-04c79e8ea343" valueTypeId="71ff028d-193d-4530-9eff-650a9d3d7a9d"/>
+  </producedTypes>
+  <name>ПравильныеОтветыПоТестам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правильные ответы по тестам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПравильныеОтветыПоТестам.Template.ОсновнаяСхемаКомпоновкиДанных1</mainDataCompositionSchema>
+  <templates uuid="fa17ff46-8ca9-4523-99c1-324cf71277fa">
+    <name>ОсновнаяСхемаКомпоновкиДанных1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных1</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

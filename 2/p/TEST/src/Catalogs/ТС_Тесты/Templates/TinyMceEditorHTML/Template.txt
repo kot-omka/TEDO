@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- saved from url=<a rel="noindex,nofollow" href="/ajax/comment_pub.php?t=37890&c=0014" target="_blank" title="Комментарий 0014" class="comment-ref">(0014)</a>about:internet -->
+<html>
+<head>
+<script type="text/javascript" src="./tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "div#editor1",
+	language : 'ru',
+	theme : "modern",
+	menubar: false,
+	statusbar: false,
+    plugins: [
+        "advlist autolink lists link image charmap preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste",
+		"hr textcolor colorpicker"
+    ],
+	//contextmenu: "inserttable | cell row column deletetable",
+	
+	setup: function(editor)
+	{
+		editor.on('init', function(e) 
+		{
+        editor.execCommand('mceFullScreen');
+		});
+    },
+    toolbar: "insertfile undo redo | styleselect | bold italic | forecolor backcolor | alignleft aligncenter alignright alignjustify | searchreplace cut copy paste | hr "
+});
+
+</script>
+</head>
+<body>
+<div name="editor1" style="width:100%" id="editor1"></div>
+</body>
+</html>

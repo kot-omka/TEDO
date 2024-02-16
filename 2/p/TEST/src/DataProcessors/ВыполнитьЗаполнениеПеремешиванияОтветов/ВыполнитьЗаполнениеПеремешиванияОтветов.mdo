@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ffe8e1c-2a12-4fea-a630-0dae8d1b54d9">
+  <producedTypes>
+    <objectType typeId="97f0fdc3-47ff-43ba-9d3c-8b462c29b50d" valueTypeId="42a150a3-826c-4ae9-a1a2-eb84dab96e13"/>
+    <managerType typeId="7452c2d0-1f25-4e2d-91d9-2e691adeabe2" valueTypeId="c67173aa-d23b-4b61-94b3-28a6bba687b1"/>
+  </producedTypes>
+  <name>ВыполнитьЗаполнениеПеремешиванияОтветов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить заполнение перемешивания ответов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыполнитьЗаполнениеПеремешиванияОтветов.Form.Форма</defaultForm>
+  <attributes uuid="dd1851a2-6b79-4281-9f6b-d8dc28e9e2ae">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+  </attributes>
+  <forms uuid="8df37d29-f58e-4129-94c8-e11bf3c55250">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

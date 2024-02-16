@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="183e557a-9512-4675-9f4e-549ed530b2a2">
+  <name>ТС_Тестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подготовка к тестированию</value>
+  </synonym>
+  <comment>Программа для подготовки к тестированию по заранее известным вопросам</comment>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="422e2207-7089-4914-9dcc-79760e75eb39"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="6659d71e-3b47-4252-9bdc-0b0a4263d5f5"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="3450b58a-2bcc-4e67-9730-25b9dad09d21"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="2d8e0e6e-d7f0-4bc3-8813-af0d6f535e05"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="d0942076-ebf7-4b5c-81c3-6c55069f82fb"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="f02e64f7-b077-4218-af83-059ea2326a8d"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="e0af46dc-1dc1-412f-ba4a-2424af979eb0"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.ТС_ПолныеПрава</defaultRoles>
+  <defaultRoles>Role.ТС_Тестирование</defaultRoles>
+  <vendor>edu-1s@ya.ru</vendor>
+  <version>2.0</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <mainSectionPicture/>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <briefInformation>
+    <key>ru</key>
+    <value>Подготовка к тестированию</value>
+  </briefInformation>
+  <detailedInformation>
+    <key>ru</key>
+    <value>Программа для подготовки к тестированию по заранее известным вопросам</value>
+  </detailedInformation>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <compatibilityMode>8.3.14</compatibilityMode>
+  <languages uuid="8c31082c-15c8-4db7-ac3a-ebaba4bebe2f">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ТС_Тестирование</subsystems>
+  <subsystems>Subsystem.ТС_Справочники</subsystems>
+  <subsystems>Subsystem.ТС_Отчеты</subsystems>
+  <subsystems>Subsystem.ТС_Администрирование</subsystems>
+  <subsystems>Subsystem.ТС_ОбратнаяСвязь</subsystems>
+  <commonPictures>CommonPicture.ТС_Администрирование</commonPictures>
+  <commonPictures>CommonPicture.ТС_Тестирование</commonPictures>
+  <commonPictures>CommonPicture.ТС_Редактирование</commonPictures>
+  <commonPictures>CommonPicture.ТС_Отчеты</commonPictures>
+  <commonPictures>CommonPicture.ТС_ЗамечаниеПрочее</commonPictures>
+  <commonPictures>CommonPicture.ТС_ЗамечаниеДобавить</commonPictures>
+  <commonPictures>CommonPicture.ТС_ЗамечениеПравить</commonPictures>
+  <commonPictures>CommonPicture.ТС_ЗамечаниеВопрос</commonPictures>
+  <commonPictures>CommonPicture.ТС_ЗамечаниеОшибка</commonPictures>
+  <commonPictures>CommonPicture.ТС_Обновить</commonPictures>
+  <commonPictures>CommonPicture.ТС_Настройки</commonPictures>
+  <commonPictures>CommonPicture.ТС_Новый</commonPictures>
+  <commonPictures>CommonPicture.ТС_Следующий</commonPictures>
+  <commonPictures>CommonPicture.ТС_Печать</commonPictures>
+  <commonPictures>CommonPicture.ТС_Подтверждение</commonPictures>
+  <commonPictures>CommonPicture.ТС_Просмотреть</commonPictures>
+  <commonPictures>CommonPicture.ТС_Избранное</commonPictures>
+  <commonPictures>CommonPicture.ТС_ИзбранноеПомещен</commonPictures>
+  <commonPictures>CommonPicture.ТС_ОбратнаяСвязь</commonPictures>
+  <commonPictures>CommonPicture.ТС_Подсказка</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
+  <commonPictures>CommonPicture.ФлагНеУстановлен</commonPictures>
+  <commonPictures>CommonPicture.ФлагУстановлен</commonPictures>
+  <sessionParameters>SessionParameter.ТС_ТекущийПользователь</sessionParameters>
+  <sessionParameters>SessionParameter.ТС_ПутьTinyMCE</sessionParameters>
+  <roles>Role.ТС_ПолныеПрава</roles>
+  <roles>Role.ТС_РедактированиеСправочников</roles>
+  <roles>Role.ТС_ПросмотрСправочников</roles>
+  <roles>Role.ТС_Тестирование</roles>
+  <roles>Role.ТС_ВыводНаПринтерФайлБуферОбмена</roles>
+  <commonTemplates>CommonTemplate.Макет</commonTemplates>
+  <commonTemplates>CommonTemplate.МакетРезультатТестирования</commonTemplates>
+  <commonModules>CommonModule.ТС_ОбщегоНазначенияСервер</commonModules>
+  <commonModules>CommonModule.ТС_ОбщегоНазначенияКлиент</commonModules>
+  <commonModules>CommonModule.ТС_ОбновлениеДанныхСервер</commonModules>
+  <commonModules>CommonModule.ФоновыеЗаданияСервер</commonModules>
+  <commonAttributes>CommonAttribute.ТС_Комментарий</commonAttributes>
+  <xDTOPackages>XDTOPackage.ТС_Обмен</xDTOPackages>
+  <scheduledJobs>ScheduledJob.ТС_ОбновленияИндексаПолнотекстовогоПоиска</scheduledJobs>
+  <functionalOptions>FunctionalOption.ТС_Подтверждения</functionalOptions>
+  <functionalOptions>FunctionalOption.ТС_НаборыТестов</functionalOptions>
+  <functionalOptions>FunctionalOption.ТС_Замечания</functionalOptions>
+  <functionalOptions>FunctionalOption.ТС_ПрограммыОбучения</functionalOptions>
+  <functionalOptions>FunctionalOption.ТС_ИзбранныеТесты</functionalOptions>
+  <functionalOptions>FunctionalOption.ТС_ОбменСДругимиСистемами</functionalOptions>
+  <commonCommands>CommonCommand.ТС_НастройкиПользователя</commonCommands>
+  <commonCommands>CommonCommand.ТС_ОткрытьОбратнуюСвязь</commonCommands>
+  <commonCommands>CommonCommand.ПоказатьИзменения</commonCommands>
+  <commandGroups>CommandGroup.ТС_Тестирование</commandGroups>
+  <commandGroups>CommandGroup.ТС_Справочники</commandGroups>
+  <commandGroups>CommandGroup.ТС_Отчеты</commandGroups>
+  <commandGroups>CommandGroup.ТС_Сервис</commandGroups>
+  <constants>Constant.ТС_ИспользоватьПодтверждения</constants>
+  <constants>Constant.ТС_ИспользоватьНаборыТестов</constants>
+  <constants>Constant.ТС_ИспользоватьЗамечания</constants>
+  <constants>Constant.ТС_ИспользоватьПрограммыОбучения</constants>
+  <constants>Constant.ТС_ИспользоватьИзбранныеТесты</constants>
+  <constants>Constant.ТС_ИспользоватьОбменСДругимиСистемами</constants>
+  <constants>Constant.ТС_ВебПутьДляБиблиотек</constants>
+  <constants>Constant.ТС_РегистрацияИмя</constants>
+  <constants>Constant.ТС_РегистрацияАдрес</constants>
+  <constants>Constant.ТС_ТекущаяВерсияКонфигурации</constants>
+  <commonForms>CommonForm.ТС_ОсновнаяФормаКонстант</commonForms>
+  <commonForms>CommonForm.ТС_ФормаНачальнойСтраницы</commonForms>
+  <commonForms>CommonForm.ТС_ФормаПечати</commonForms>
+  <commonForms>CommonForm.ТС_ФормаПросмотраHTML</commonForms>
+  <commonForms>CommonForm.ТС_ОбратнаяСвязь</commonForms>
+  <catalogs>Catalog.ТС_Курсы</catalogs>
+  <catalogs>Catalog.ТС_Тесты</catalogs>
+  <catalogs>Catalog.ТС_Пользователи</catalogs>
+  <catalogs>Catalog.ТС_НаборыТестов</catalogs>
+  <catalogs>Catalog.ТС_Файлы</catalogs>
+  <catalogs>Catalog.ТС_ПрограммыОбучения</catalogs>
+  <catalogs>Catalog.ТС_УчетныеЗаписиЭлектроннойПочты</catalogs>
+  <documents>Document.ТС_РезультатТестирования</documents>
+  <enums>Enum.ТС_ВидыЗамечаний</enums>
+  <reports>Report.ТС_РезультатыТестирования</reports>
+  <reports>Report.ТС_СпискиТестов</reports>
+  <reports>Report.ПравильныеОтветы_Устаревшие</reports>
+  <reports>Report.ПравильныеОтветыКурсаПоРазделам</reports>
+  <reports>Report.КоличествоВопросов</reports>
+  <reports>Report.ПравильныеОтветыПоТестам</reports>
+  <dataProcessors>DataProcessor.ТС_Тестирование</dataProcessors>
+  <dataProcessors>DataProcessor.ТС_ЗагрузкаДанных</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаТестов</dataProcessors>
+  <dataProcessors>DataProcessor.ОчиститьИзбранныеТесты</dataProcessors>
+  <dataProcessors>DataProcessor.ТС_ЗагрузкаДанныхJSON</dataProcessors>
+  <dataProcessors>DataProcessor.ТС_ПерезаполнитьНаборыТестов</dataProcessors>
+  <dataProcessors>DataProcessor.Тестирование2</dataProcessors>
+  <dataProcessors>DataProcessor.ПодготовкаКЗагрузкеТестовЧерезСайт</dataProcessors>
+  <dataProcessors>DataProcessor.ЗаполнитьДанныеВРегистрПараметрыФормированияЗапросаДляОбновленияТестовИзФайла</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаТестовЧерезСайт</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаРазделаКурса</dataProcessors>
+  <dataProcessors>DataProcessor.ВыполнитьЗаполнениеПеремешиванияОтветов</dataProcessors>
+  <informationRegisters>InformationRegister.ТС_РезультатыТестирований</informationRegisters>
+  <informationRegisters>InformationRegister.ТС_ЗамечанияКТестам</informationRegisters>
+  <informationRegisters>InformationRegister.ТС_ИзбранныеТесты</informationRegisters>
+  <informationRegisters>InformationRegister.ПараметрыФормированияЗапросаДляОбновленияТестов</informationRegisters>
+  <informationRegisters>InformationRegister.ПараметрыТестированияПользователя</informationRegisters>
+</mdclass:Configuration>

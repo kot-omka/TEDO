@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51122448-305f-4f2f-9214-e5932a0065d3">
+  <name>ТС_Обмен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен</value>
+  </synonym>
+  <namespace>ТС_Обмен</namespace>
+</mdclass:XDTOPackage>

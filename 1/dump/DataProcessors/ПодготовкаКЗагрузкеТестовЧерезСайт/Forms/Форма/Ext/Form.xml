@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Button name="ВыполнитьНумерациюРазделов" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВыполнитьНумерациюРазделов</CommandName>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ExtendedTooltip name="ВыполнитьНумерациюРазделовРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ВыполнитьНумерациюВопросов" id="5">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ВыполнитьНумерациюВопросов</CommandName>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ExtendedTooltip name="ВыполнитьНумерациюВопросовРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<Button name="ЗаполнитьПараметрыЗагрузкиТестовИзСайта" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаполнитьПараметрыЗагрузкиТестовИзСайта</CommandName>
+			<ExtendedTooltip name="ЗаполнитьПараметрыЗагрузкиТестовИзСайтаРасширеннаяПодсказка" id="4"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПодготовкаКЗагрузкеТестовЧерезСайт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьНумерациюРазделов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить нумерацию разделов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполняет номер раздела для курса в справочнике ТС_Тесты. Выполнять тольок тогда, когда тесты не сопоставляются или не заполнен номер раздела</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьНумерациюРазделов</Action>
+		</Command>
+		<Command name="ЗаполнитьПараметрыЗагрузкиТестовИзСайта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры загрузки тестов из сайта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры загрузки тестов из сайта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПараметрыЗагрузкиТестовИзСайтаНаКлиенте</Action>
+		</Command>
+		<Command name="ВыполнитьНумерациюВопросов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить нумерацию вопросов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполняет нумерацию вопросов из наименование. 
+Внимание! номер заполняется корректно только в том случае, когда наименование генерируется автоматически (пример: 8470_[Номер вопроса])</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьНумерациюВопросов</Action>
+		</Command>
+	</Commands>
+</Form>

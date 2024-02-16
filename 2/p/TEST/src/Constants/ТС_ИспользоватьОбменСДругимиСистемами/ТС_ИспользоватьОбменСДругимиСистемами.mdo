@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f82e7b8-5ec3-4d51-8220-3a2878400f30">
+  <producedTypes>
+    <managerType typeId="feb8f794-3692-41ab-b248-988aee086f41" valueTypeId="6181d1b3-41a5-4e0e-a218-9589c453d745"/>
+    <valueManagerType typeId="8b1c9be2-ce94-454a-9ac4-84b0a748325f" valueTypeId="fe63beed-d0f9-4916-9baa-046dae867c7e"/>
+    <valueKeyType typeId="0b18e71e-e600-50d2-92cf-5b7248c29972" valueTypeId="71b167e9-f181-5dba-812e-3f360ba176f1"/>
+  </producedTypes>
+  <name>ТС_ИспользоватьОбменСДругимиСистемами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать обмен с другими системами</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

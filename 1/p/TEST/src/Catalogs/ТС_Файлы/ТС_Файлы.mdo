@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a31ad035-963b-4b3b-846f-73b072c2de39">
+  <producedTypes>
+    <objectType typeId="4b51cd7d-521c-4040-9521-528660789e00" valueTypeId="59cb1650-ce50-4b77-8216-ff5b6dc87ce9"/>
+    <refType typeId="58250001-a73f-434f-a947-e259adef6af2" valueTypeId="1f01340b-7ac3-4d61-b72e-7a2c58cbc070"/>
+    <selectionType typeId="60cac9cd-8e56-429e-a506-1878383b13bf" valueTypeId="52cbabf9-5b05-4e3f-8ffa-b46abdf149cb"/>
+    <listType typeId="3a2897ea-9699-479c-b4f6-fee27f5da9d3" valueTypeId="212b2e14-69db-4f61-a098-cedc284dceeb"/>
+    <managerType typeId="23539fdb-4056-448e-9a40-ece1544c608c" valueTypeId="67acd008-1308-4a6a-bf9b-25e664572f51"/>
+  </producedTypes>
+  <name>ТС_Файлы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изображения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТС_Файлы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТС_Файлы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Файл</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Файлы</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>8</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТС_Файлы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="ba17e948-1bb1-45bf-84d3-bd7e0087e097">
+    <name>Изображение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="862bfc47-a310-4b1d-966e-5a6c1052acd6">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70477f58-3496-464e-951e-a0d5129568bc">
+    <name>удКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уд комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bf1c314e-e4df-4fea-9acb-88c21228668b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

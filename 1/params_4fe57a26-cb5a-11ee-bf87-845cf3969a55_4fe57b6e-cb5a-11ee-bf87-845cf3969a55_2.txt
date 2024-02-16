@@ -1,0 +1,7 @@
+DESIGNER /DisableStartupDialogs /L ru /VL ru
+  /F "c:\1C_REPO_EDT\1\db\"
+ 
+ 
+ /DumpConfigToFiles "c:\1C_REPO_EDT\1\dump\"  
+ /DumpResult "c:\1C_REPO_EDT\1\result.txt"
+ /Out "c:\1C_REPO_EDT\1\log.txt" -NoTruncate

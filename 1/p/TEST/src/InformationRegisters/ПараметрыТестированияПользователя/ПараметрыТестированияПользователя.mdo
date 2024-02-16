@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a441e431-22d6-422a-9957-bdcaa1cab6af">
+  <producedTypes>
+    <selectionType typeId="a8d63690-9945-45df-bc08-8effa641752a" valueTypeId="ee6871eb-9c53-4efd-bf39-dec99abff30c"/>
+    <listType typeId="081b6ebe-8468-4937-9acc-c29f5156e4b2" valueTypeId="2d761a75-2983-4024-95eb-a1616960775e"/>
+    <managerType typeId="81d81a23-9e13-4be7-9ce3-56665168c110" valueTypeId="82fabb03-788a-428c-a2d9-6e9ad1444405"/>
+    <recordSetType typeId="c6ea5aba-8d58-475a-9894-05864657226a" valueTypeId="8a0f43db-7b2a-46b2-9b35-15a3097d771f"/>
+    <recordKeyType typeId="24d2ac87-5aea-4f82-b469-a83874e089b6" valueTypeId="92b5a736-8061-4b8d-b524-6d769eb02b34"/>
+    <recordType typeId="c2e212d8-e09f-4fcb-915e-d0a81e599810" valueTypeId="3a4a63cc-d777-4f10-8705-e5083e94a6f4"/>
+    <recordManagerType typeId="7a9ca72e-c238-4a95-aa1e-032696ab86a5" valueTypeId="1b097b76-5581-469a-9406-7c1ab3078758"/>
+  </producedTypes>
+  <name>ПараметрыТестированияПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры тестирования пользователя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="59121841-e5d4-4912-8787-062d32392fac">
+    <name>ШиринаТекстаПодсказки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ширина текста подсказки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>10</value>
+    </fillValue>
+  </resources>
+  <resources uuid="214fcee9-1390-4c1a-96b5-560115bf0a95">
+    <name>РазмерШтрифтаПодсказки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер штрифта подсказки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>13</value>
+    </fillValue>
+  </resources>
+  <resources uuid="96361ffc-a377-4a20-b021-15305903a604">
+    <name>СимуляцияЭкзамена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрыть кнопку &quot;Показать ответ&quot; в режиме &quot;Экзамен&quot;</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="edae010f-575a-4762-8b77-9fc4b445238d">
+    <name>ГорячиеКлавиши</name>
+    <synonym>
+      <key>ru</key>
+      <value>Горячие клавиши</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a5212e83-b824-432a-b25a-161a70d538a8">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

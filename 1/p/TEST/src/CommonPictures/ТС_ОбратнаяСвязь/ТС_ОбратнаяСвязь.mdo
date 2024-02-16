@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51d8d798-6143-4a35-af8d-a2753104fe0b">
+  <name>ТС_ОбратнаяСвязь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обратная связь</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac8564f1-e29f-4686-916b-30027762c4e1">
+  <producedTypes>
+    <objectType typeId="39a1bed4-1495-46b9-8a0d-9fec77bc5a90" valueTypeId="db673906-72f7-4416-8e51-061f359633af"/>
+    <managerType typeId="8387bd94-e52f-4360-8f9e-7420fad9c737" valueTypeId="4343dc4c-c51f-4b43-a988-f651cbce87cf"/>
+  </producedTypes>
+  <name>ТС_ЗагрузкаДанныхJSON</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных (json)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТС_ЗагрузкаДанныхJSON.Form.Форма</defaultForm>
+  <forms uuid="12e6aa54-b41a-41f0-9e1b-c7401b79f6fc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="905e3f2d-a8a6-46b3-aa48-51a5d66322fb">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

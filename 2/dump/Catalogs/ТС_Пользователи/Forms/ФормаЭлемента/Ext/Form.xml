@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="75">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<SkipOnInput>true</SkipOnInput>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="76"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Login</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="43">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="ГруппаФормаТестирования" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа форма тестирования</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаФормаТестированияРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<CheckBoxField name="ПеремишватьОтветыВТесте" id="91">
+							<DataPath>Объект.ПеремешиватьОтветыВТесте</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке данного флага ответы в тесте будут перемешиваться случайным образом (если для теста включено перемешивание ответов)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПеремишватьОтветыВТестеКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="ПеремишватьОтветыВТестеРасширеннаяПодсказка" id="93"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПеремешиватьВопросыВТесте" id="106">
+							<DataPath>Объект.ПеремешиватьВопросыВТесте</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке данного флага вопросы в тесте будут перемешиваться случайным образом</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПеремешиватьВопросыВТестеКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ПеремешиватьВопросыВТестеРасширеннаяПодсказка" id="108"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПереходитьКСледующемуПриВыборе" id="10">
+							<DataPath>Объект.ПереходитьКСледующемуПриВыборе</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке данного флага, во время прохождения тестирования при выборе ответа будет производиться автоматический переход к следующему тесту (не работает для курсов, где разрешены множественные ответы в тестах).</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>CheckBox</CheckBoxType>
+							<ContextMenu name="ПереходитьКСледующемуПриВыбореКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПереходитьКСледующемуПриВыбореРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ПереходитьКСледующемуПриВыбореПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаПропускатьНеПравильныеОтветы" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пропускать не правильные ответы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пропускать не правильные ответы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПропускатьНеПравильныеОтветыРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="116">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="118"/>
+								</LabelDecoration>
+								<CheckBoxField name="ПропускатьНеправильныеОтветы" id="111">
+									<DataPath>Объект.ПропускатьНеправильныеОтветы</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Переход к следующему вопросу, если был дан неправильный ответ. Работает только для тестирования 2.0.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПропускатьНеправильныеОтветыКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ПропускатьНеправильныеОтветыРасширеннаяПодсказка" id="113"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ДобавлятьОшибочныеВИзбранные" id="77">
+							<DataPath>Объект.ДобавлятьОшибочныеВИзбранные</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке данного флага все тесты, в которых были допущены ошибки, будут автоматически добавляться в избранные. При повторном правильном решении теста, будут автоматически удаляться из избранных.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДобавлятьОшибочныеВИзбранныеКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ДобавлятьОшибочныеВИзбранныеРасширеннаяПодсказка" id="79"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПроверятьТестПриВыборе" id="88">
+							<DataPath>Объект.ПроверятьТестПриВыборе</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке данного флага, во время прохождения тестирования при выборе ответа будет производится автоматическая проверка правильности выбора ответа.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроверятьТестПриВыбореКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ПроверятьТестПриВыбореРасширеннаяПодсказка" id="90"/>
+						</CheckBoxField>
+						<UsualGroup name="Группа21" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа21</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа21</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="61"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="98">
+									<Width>35</Width>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="99"/>
+									<ChildItems>
+										<CheckBoxField name="НеВыделятьОтмеченныеТесты" id="13">
+											<DataPath>Объект.НеВыделятьОтмеченныеТесты</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При установке данного флага, во время прохождения теста при выборе ответа и переходе к следующему тесту, предыдущий тест не будет выделяться желтым цветом. Это дает некоторое увеличение быстродействия отображения формы.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>CheckBox</CheckBoxType>
+											<ContextMenu name="НеВыделятьОтмеченныеТестыКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="НеВыделятьОтмеченныеТестыРасширеннаяПодсказка" id="15"/>
+											<Events>
+												<Event name="OnChange">НеВыделятьОтмеченныеТестыПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа1" id="94">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="95"/>
+									<ChildItems>
+										<CheckBoxField name="НеВыделятьОтмеченныеТестыТолькоДляВебКлиента" id="62">
+											<DataPath>Объект.НеВыделятьОтмеченныеТестыТолькоДляВебКлиента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать данную настройку только при рабоче через веб-клиент или всегда.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Tumbler</CheckBoxType>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>БЛ=Всегда; БИ='Для веб-клинета'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="НеВыделятьОтмеченныеТестыТолькоДляВебКлиентаКонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="НеВыделятьОтмеченныеТестыТолькоДляВебКлиентаРасширеннаяПодсказка" id="64"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа31" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа31</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа31</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа31РасширеннаяПодсказка" id="66"/>
+							<ChildItems>
+								<UsualGroup name="Группа4" id="100">
+									<Width>35</Width>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="101"/>
+									<ChildItems>
+										<CheckBoxField name="ОткрыватьФормуТестированияВНовомОкне" id="32">
+											<DataPath>Объект.ОткрыватьФормуТестированияВНовомОкне</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При установке данного флага, форма тестирования будет открываться в новом окне. Это может быть удобно при прохождении тестирования в веб-клиенте с мобильных устройств, таких как планшет или смартфон.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОткрыватьФормуТестированияВНовомОкнеКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ОткрыватьФормуТестированияВНовомОкнеРасширеннаяПодсказка" id="34"/>
+											<Events>
+												<Event name="OnChange">ОткрыватьФормуТестированияВНовомОкнеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="96">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<CheckBoxField name="ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиента" id="67">
+											<DataPath>Объект.ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать данную настройку только при рабоче через веб-клиент или всегда.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Tumbler</CheckBoxType>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>БЛ=Всегда; БИ='Для веб-клиента'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиентаКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиентаРасширеннаяПодсказка" id="69"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа41" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа41</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа41</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа41РасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<UsualGroup name="Группа5" id="102">
+									<Width>35</Width>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="103"/>
+									<ChildItems>
+										<InputField name="ШиринаФормыТестирования" id="47">
+											<DataPath>Объект.ШиринаФормыТестирования</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Данный параметр ограничивает максимальную ширину формы тестирования (0 - не ограничивать). Это может быть удобно при прохождении тестирования в веб-клиенте с мобильных устройств, таких как планшет или смартфон.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="ШиринаФормыТестированияКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ШиринаФормыТестированияРасширеннаяПодсказка" id="49"/>
+											<Events>
+												<Event name="OnChange">ШиринаФормыТестированияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа6" id="104">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="105"/>
+									<ChildItems>
+										<CheckBoxField name="ШиринаФормыТестированияТолькоДляВебКлиента" id="72">
+											<DataPath>Объект.ШиринаФормыТестированияТолькоДляВебКлиента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать данную настройку только при рабоче через веб-клиент или всегда.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Tumbler</CheckBoxType>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>БЛ=Всегда; БИ='Для веб-клиента'</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ШиринаФормыТестированияТолькоДляВебКлиентаКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="ШиринаФормыТестированияТолькоДляВебКлиентаРасширеннаяПодсказка" id="74"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбщиеНастройки" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общие настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбщиеНастройкиРасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="Родитель" id="7">
+							<DataPath>Объект.Parent</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="Role.ТС_ПолныеПрава">true</xr:Value>
+								<xr:Value name="Role.ТС_РедактированиеСправочников">false</xr:Value>
+								<xr:Value name="Role.ТС_ПросмотрСправочников">false</xr:Value>
+								<xr:Value name="Role.ТС_Тестирование">false</xr:Value>
+								<xr:Value name="Role.ТС_ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+							</UserVisible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТС_Пользователи</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

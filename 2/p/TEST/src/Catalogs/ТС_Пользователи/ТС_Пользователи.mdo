@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c78e360-b14d-4731-a4cc-d0028cf9d124">
+  <producedTypes>
+    <objectType typeId="78c07cb6-bd08-44b9-a058-245a7ee10af9" valueTypeId="45e5da00-cc8e-4d7e-8a98-86bd5004c3ff"/>
+    <refType typeId="47cf4c84-b455-42df-ac80-12074bb33910" valueTypeId="a4a130c5-b1f4-4c18-848c-df3be3369799"/>
+    <selectionType typeId="9ab142dd-7dbb-4360-9c23-bf052d1604bb" valueTypeId="9f919aa6-cecb-4696-b7bd-107c026b4b8b"/>
+    <listType typeId="dbda92e8-d40b-4a4a-8306-baa365a32178" valueTypeId="1e94025a-e2d9-4250-a199-d7f4ed7f7a03"/>
+    <managerType typeId="cad7d2b9-92c2-47e1-a549-c82d1779a3d9" valueTypeId="1d331a37-c60b-4e89-ac62-b007d69e39e2"/>
+  </producedTypes>
+  <name>ТС_Пользователи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТС_Пользователи.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Пользователь</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Пользователи</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>50</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТС_Пользователи.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ТС_Пользователи.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="85607c78-5c4c-4cd2-a7d9-a47b51ec356e">
+    <name>ПеремешиватьОтветыВТесте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемешивать ответы в тесте</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5ec5b24-3de5-4a76-8d6a-83ecf8ad8e63">
+    <name>ДобавлятьОшибочныеВИзбранные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматически добавлять ошибочные тесты в избранные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="856bb172-c411-479d-ae6d-f1d548cda898">
+    <name>ПереходитьКСледующемуПриВыборе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переходить к следующему тесту при выборе ответа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa48ee2b-4646-4659-abd3-ba9b1b733238">
+    <name>ПроверятьТестПриВыборе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять тест при выборе ответа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef4d8fa0-73b5-4f9c-a759-a2fad8f93527">
+    <name>НеВыделятьОтмеченныеТесты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выделять отмеченные тесты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="474b5e08-0dd4-4b87-ae91-0c6495adbb87">
+    <name>НеВыделятьОтмеченныеТестыТолькоДляВебКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только для веб клиента</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35c751a6-0b3d-47b4-9751-b64323ee88a6">
+    <name>ОткрыватьФормуТестированияВНовомОкне</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открывать форму тестирования в новом окне</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a96845fe-249f-4f4c-b38f-8236b16d06c1">
+    <name>ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только для веб клиента</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a8c6414-4b93-44a5-842f-30ee4d685987">
+    <name>ШиринаФормыТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ширина формы тестирования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f015d92b-eb3d-4618-aef6-e7d003d4c101">
+    <name>ШиринаФормыТестированияТолькоДляВебКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только для веб клиента</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19d53004-6639-4aca-a7ca-684be9f6bfa3">
+    <name>ПеремешиватьВопросыВТесте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемешивать вопросы в тесте</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ec79a4b-83c2-4f6d-ad67-83a456981a08">
+    <name>ПропускатьНеправильныеОтветы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропускать неправильные ответы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d22400e2-a680-406a-b684-eba896c74e7b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a9f49f49-e276-42b2-b42f-7c67ba308333">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="60041b4f-2709-45d2-9143-ded75d3ae9b0">
+    <name>ОткрытьФормуСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи</value>
+    </synonym>
+    <group>CommandGroup.ТС_Сервис</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="4ad4a210-3096-4a02-bf76-504a374116dd">
+    <name>ОткрытьФормуЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

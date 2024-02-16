@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0e59033-fed9-4663-9910-4a5aa906a5f4">
+  <producedTypes>
+    <managerType typeId="ae698f92-5249-4051-9461-7262b2ff9117" valueTypeId="503b8e42-c627-405c-a05b-3e794f5b331f"/>
+    <valueManagerType typeId="788d7c8a-7770-444f-b841-c406101da245" valueTypeId="a050e5b4-a2b0-40c1-875a-24fbddc13fd9"/>
+    <valueKeyType typeId="f71fe185-dad3-5506-9daa-e9f0160081d8" valueTypeId="b2128dfe-23ee-57e8-98be-e2c9bca57d67"/>
+  </producedTypes>
+  <name>ТС_ИспользоватьПодтверждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подтверждения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65728e7c-c7f2-42f4-bcc1-935a623c5d53">
+  <producedTypes>
+    <objectType typeId="3a6c4789-5029-4812-a2e5-bfeec87a32fa" valueTypeId="28e1a6ee-3a7f-46d9-9cf4-b3eeb7738e32"/>
+    <managerType typeId="21f50de0-23c6-4fd9-bc5e-f683103145a2" valueTypeId="f18cb711-d44b-42c5-a8d5-4579e1e9cdf0"/>
+  </producedTypes>
+  <name>ТС_СпискиТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списки тестов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ТС_СпискиТестов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ТС_СпискиТестов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="b5f574a4-2ba4-4957-8f89-db901a185ec0">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="06b0e259-3db3-47e8-bccd-a86732cb8c39">
+    <name>НаборТестов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор тестов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_НаборыТестов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Report.ТС_СпискиТестов.Attribute.Курс</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="2440df4c-a6f9-458b-911c-7ce7186e3f2b">
+    <name>ГруппаТестов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа тестов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Report.ТС_СпискиТестов.Attribute.Курс</field>
+    </choiceParameterLinks>
+  </attributes>
+  <forms uuid="17376e4e-b0ee-469b-af98-c45b305b0ead">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a1a78ac3-0d15-437e-a4ba-122949e9e41d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

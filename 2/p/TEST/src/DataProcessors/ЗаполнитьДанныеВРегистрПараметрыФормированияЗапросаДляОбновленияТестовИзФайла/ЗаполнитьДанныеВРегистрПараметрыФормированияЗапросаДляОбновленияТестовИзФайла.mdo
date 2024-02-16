@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2680cea3-a44c-4581-8ad7-e5abcc41243f">
+  <producedTypes>
+    <objectType typeId="4fa94e42-84a2-48f9-a93e-67e4a6101c17" valueTypeId="d6c1193c-bf1b-45bd-8c54-fdedd4e3dc73"/>
+    <managerType typeId="cf424348-f92c-4145-a83a-ac9154036ad1" valueTypeId="4211a01b-accc-44d4-8aef-4cb195b356cc"/>
+  </producedTypes>
+  <name>ЗаполнитьДанныеВРегистрПараметрыФормированияЗапросаДляОбновленияТестовИзФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить данные в регистр &quot;Параметры формирования запроса для обновления тестов&quot; из файла</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнитьДанныеВРегистрПараметрыФормированияЗапросаДляОбновленияТестовИзФайла.Form.Форма</defaultForm>
+  <forms uuid="20316851-a83a-4598-bfae-85af805c7b5d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hpwa:HomePageWorkArea xmlns:hpwa="http://g5.1c.ru/v8/dt/hpwa">
+  <columns>
+    <items>
+      <form>DataProcessor.Тестирование2.Form.Форма</form>
+      <height>10</height>
+      <visibility>
+        <common>true</common>
+      </visibility>
+    </items>
+    <items>
+      <form>InformationRegister.ТС_ЗамечанияКТестам.Form.ФормаАктивных</form>
+      <height>10</height>
+      <visibility>
+        <common>true</common>
+        <for>
+          <value>true</value>
+          <role>Role.ТС_ПолныеПрава</role>
+        </for>
+        <for>
+          <value>true</value>
+          <role>Role.ТС_РедактированиеСправочников</role>
+        </for>
+        <for>
+          <role>Role.ТС_ПросмотрСправочников</role>
+        </for>
+        <for>
+          <role>Role.ТС_Тестирование</role>
+        </for>
+        <for>
+          <role>Role.ТС_ВыводНаПринтерФайлБуферОбмена</role>
+        </for>
+      </visibility>
+    </items>
+  </columns>
+</hpwa:HomePageWorkArea>

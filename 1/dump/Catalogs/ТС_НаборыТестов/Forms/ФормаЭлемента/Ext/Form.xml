@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПройтиТестирование" id="79">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПройтиТестирование</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Начать тестирование по данному набору</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПройтиТестированиеРасширеннаяПодсказка" id="80"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="65">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<CheckBoxField name="ВключатьУстаревшие" id="10">
+					<DataPath>Объект.ВключатьУстаревшие</DataPath>
+					<UserVisible>
+						<xr:Common>true</xr:Common>
+						<xr:Value name="Role.ТС_ПолныеПрава">true</xr:Value>
+						<xr:Value name="Role.ТС_РедактированиеСправочников">true</xr:Value>
+						<xr:Value name="Role.ТС_ПросмотрСправочников">false</xr:Value>
+						<xr:Value name="Role.ТС_Тестирование">false</xr:Value>
+						<xr:Value name="Role.ТС_ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать устаревшие тесты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВключатьУстаревшиеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ВключатьУстаревшиеРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="ТолькоАктуальные" id="106">
+					<DataPath>Объект.ТолькоАктуальные</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоАктуальныеКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ТолькоАктуальныеРасширеннаяПодсказка" id="108"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курс</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ВладелецПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Раздел" id="103">
+			<DataPath>Объект.Раздел</DataPath>
+			<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+			<ChooseType>false</ChooseType>
+			<TypeLink>
+				<xr:DataPath>Объект.Owner</xr:DataPath>
+				<xr:LinkItem>0</xr:LinkItem>
+			</TypeLink>
+			<ContextMenu name="РазделКонтекстноеМеню" id="104"/>
+			<ExtendedTooltip name="РазделРасширеннаяПодсказка" id="105"/>
+		</InputField>
+		<InputField name="Родитель" id="62">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="РодительКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="64"/>
+		</InputField>
+		<Pages name="Группа2" id="70">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<Page name="Группа3" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Содержание набора</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<Table name="Содержание" id="13">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Содержание</DataPath>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СодержаниеКонтекстноеМеню" id="14"/>
+							<AutoCommandBar name="СодержаниеКоманднаяПанель" id="15">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="СодержаниеГруппа1" id="56">
+										<ExtendedTooltip name="СодержаниеГруппа1РасширеннаяПодсказка" id="57"/>
+										<ChildItems>
+											<Button name="СодержаниеДобавить" id="38">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СодержаниеДобавитьРасширеннаяПодсказка" id="39"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СодержаниеГруппа2" id="58">
+										<ExtendedTooltip name="СодержаниеГруппа2РасширеннаяПодсказка" id="59"/>
+										<ChildItems>
+											<Button name="СодержаниеИзменить" id="40">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.Change</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеИзменитьРасширеннаяПодсказка" id="41"/>
+											</Button>
+											<Button name="СодержаниеУдалить" id="42">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.Delete</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеУдалитьРасширеннаяПодсказка" id="43"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="СодержаниеГруппа3" id="60">
+										<ExtendedTooltip name="СодержаниеГруппа3РасширеннаяПодсказка" id="61"/>
+										<ChildItems>
+											<Button name="СодержаниеПереместитьВверх" id="44">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.MoveUp</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеПереместитьВверхРасширеннаяПодсказка" id="45"/>
+											</Button>
+											<Button name="СодержаниеПереместитьВниз" id="46">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.MoveDown</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеПереместитьВнизРасширеннаяПодсказка" id="47"/>
+											</Button>
+											<Button name="СодержаниеСортироватьСписокПоВозрастанию" id="48">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.SortListAsc</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="49"/>
+											</Button>
+											<Button name="СодержаниеСортироватьСписокПоУбыванию" id="50">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Содержание.StandardCommand.SortListDesc</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="СодержаниеСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="51"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="СодержаниеВывестиСписок" id="52">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Содержание.StandardCommand.OutputList</CommandName>
+										<ExtendedTooltip name="СодержаниеВывестиСписокРасширеннаяПодсказка" id="53"/>
+									</Button>
+									<Button name="СодержаниеНайти" id="54">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Содержание.StandardCommand.Find</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СодержаниеНайтиРасширеннаяПодсказка" id="55"/>
+									</Button>
+									<Button name="СодержаниеПодбор" id="81">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Подбор</CommandName>
+										<ExtendedTooltip name="СодержаниеПодборРасширеннаяПодсказка" id="82"/>
+									</Button>
+									<Button name="СодержаниеЗаполнить" id="101">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<ExtendedTooltip name="СодержаниеЗаполнитьРасширеннаяПодсказка" id="102"/>
+									</Button>
+									<Button name="СодержаниеСлучайныйПодбор" id="83">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СлучайныйПодбор</CommandName>
+										<ExtendedTooltip name="СодержаниеСлучайныйПодборРасширеннаяПодсказка" id="84"/>
+									</Button>
+									<Button name="СодержаниеПодборПоОшибочным" id="85">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПодборПоОшибочным</CommandName>
+										<ExtendedTooltip name="СодержаниеПодборПоОшибочнымРасширеннаяПодсказка" id="86"/>
+									</Button>
+									<Button name="СодержаниеПеремешать" id="87">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Перемешать</CommandName>
+										<ExtendedTooltip name="СодержаниеПеремешатьРасширеннаяПодсказка" id="88"/>
+									</Button>
+									<Popup name="ПодборыПоЧастымОшибкам" id="91">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подборы по частым ошибкам</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подборы по частым ошибкам</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПодборыПоЧастымОшибкамРасширеннаяПодсказка" id="92"/>
+										<ChildItems>
+											<Button name="СодержаниеПодборПоЧастымОшибкам40" id="93">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборПоЧастымОшибкам40</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;=40%</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СодержаниеПодборПоЧастымОшибкам40РасширеннаяПодсказка" id="94"/>
+											</Button>
+											<Button name="СодержаниеПодборПоЧастымОшибкам50" id="89">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборПоЧастымОшибкам50</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;=50%</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СодержаниеПодборПоЧастымОшибкам50РасширеннаяПодсказка" id="90"/>
+											</Button>
+											<Button name="СодержаниеПодборПоЧастымОшибкам60" id="95">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборПоЧастымОшибкам60</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;=60%</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СодержаниеПодборПоЧастымОшибкам60РасширеннаяПодсказка" id="96"/>
+											</Button>
+											<Button name="СодержаниеПодборПоЧастымОшибкам70" id="97">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПодборПоЧастымОшибкам70</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;=70%</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СодержаниеПодборПоЧастымОшибкам70РасширеннаяПодсказка" id="98"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="СодержаниеПодборПорциямиПо50" id="99">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПодборПорциямиПо50</CommandName>
+										<ExtendedTooltip name="СодержаниеПодборПорциямиПо50РасширеннаяПодсказка" id="100"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="16"/>
+							<SearchStringAddition name="СодержаниеСтрокаПоиска" id="17">
+								<AdditionSource>
+									<Item>Содержание</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СодержаниеСтрокаПоискаКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="СодержаниеСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СодержаниеСостояниеПросмотра" id="22">
+								<AdditionSource>
+									<Item>Содержание</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СодержаниеСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="СодержаниеСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СодержаниеУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>Содержание</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СодержаниеУправлениеПоискомКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="СодержаниеУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="ChoiceProcessing">СодержаниеОбработкаВыбора</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СодержаниеНомерСтроки" id="32">
+									<DataPath>Объект.Содержание.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СодержаниеНомерСтрокиКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СодержаниеНомерСтрокиРасширеннаяПодсказка" id="34"/>
+								</LabelField>
+								<InputField name="СодержаниеТест" id="35">
+									<DataPath>Объект.Содержание.Тест</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="СодержаниеТестКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СодержаниеТестРасширеннаяПодсказка" id="37"/>
+									<Events>
+										<Event name="OnChange">СодержаниеТестПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<InputField name="ОбменID" id="76">
+							<DataPath>Объект.ОбменID</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОбменIDКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ОбменIDРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="67">
+			<DataPath>Объект.ТС_Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="69"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТС_НаборыТестов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПройтиТестирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пройти тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пройти тестирование по данному набору тестов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+R</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.ТС_Следующий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПройтиТестирование</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Подбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор (Ctrl+E)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+E</Shortcut>
+			<Action>Подбор</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СлучайныйПодбор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Случайный подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Случайный подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СлучайныйПодбор</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПоОшибочным" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПоОшибочным</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Перемешать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемешать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемешать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перемешать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПоЧастымОшибкам50" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по частым ошибкам (&gt;50%)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПоЧастымОшибкам50</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПоЧастымОшибкам70" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по частым ошибкам (&gt;70%)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПоЧастымОшибкам70</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПоЧастымОшибкам60" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по частым ошибкам (&gt;60%)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПоЧастымОшибкам60</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПоЧастымОшибкам40" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по частым ошибкам (&gt;40%)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор по ошибочным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПоЧастымОшибкам40</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодборПорциямиПо50" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор порциями по 50</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор порциями по50</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборПорциямиПо50</Action>
+		</Command>
+		<Command name="Заполнить" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+	</Commands>
+</Form>

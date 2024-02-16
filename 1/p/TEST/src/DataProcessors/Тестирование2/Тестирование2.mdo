@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc4cdb65-81ac-468a-ba2c-559e2bf05a30">
+  <producedTypes>
+    <objectType typeId="3027e675-f352-482f-b069-64b6569e20e8" valueTypeId="d5779194-4952-4c21-9fb1-bf95fb8c6003"/>
+    <managerType typeId="a5dafa06-f1a8-4fc3-a4eb-50fe89cc7762" valueTypeId="cc426c6f-bc02-4742-ab39-fd8ecb68d8e0"/>
+  </producedTypes>
+  <name>Тестирование2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование 2.0</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Тестирование2.Form.Форма</defaultForm>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Начать тестирование (2.0)</value>
+  </extendedPresentation>
+  <forms uuid="76f7d09a-7c6d-4858-84ad-1103bd09e4d7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="af90f7fa-d0aa-44ff-901b-78ce28d87ec8">
+    <name>ФормаНастройкиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки пользователя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c60c86a-86b3-43ca-97e6-0d0cfe30df73">
+    <name>ФормаНомераВопросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма номера вопросов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3906020e-7482-4a94-b702-c46d5cc414f4">
+    <name>МакетПодсказки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет подсказки</value>
+    </synonym>
+  </templates>
+  <commands uuid="0525e90a-1d26-424b-895f-bc1d5ff35004">
+    <name>НачатьТестирование2_0</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начать тестирование 2.0</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

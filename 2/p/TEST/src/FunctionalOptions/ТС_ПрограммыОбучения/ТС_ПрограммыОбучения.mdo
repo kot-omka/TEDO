@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d201329-d437-4f8f-88a7-4b5ad05d2966">
+  <name>ТС_ПрограммыОбучения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программы обучения</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьПрограммыОбучения</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ТС_ПрограммыОбучения</content>
+  <content>Document.ТС_РезультатТестирования.Attribute.НомерЭтапа</content>
+  <content>InformationRegister.ТС_РезультатыТестирований.Dimension.ПрограммаОбучения</content>
+  <content>InformationRegister.ТС_РезультатыТестирований.Dimension.НомерТестирования</content>
+</mdclass:FunctionalOption>

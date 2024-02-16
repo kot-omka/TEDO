@@ -1,0 +1,98 @@
+!SESSION 2024-02-14 19:59:13.482 -----------------------------------------------
+eclipse.buildId=2023.2.4.6
+java.version=11.0.18
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2024-02-14 19:59:13.482
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2024-02-14 19:59:13.487
+!MESSAGE java.vm.info=mixed mode
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2024-02-14 19:59:14.004
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2024-02-14 19:59:15.656
+!MESSAGE Ошибка подключения к сервису 1С:Пульт. Сбор статистики производительности будет отключен.
+!STACK 0
+com._1c.g5.ides.monitoring.pult.PultMonitoringReporterException: 1C:Pult monitoring reporter start failed.
+	at com._1c.g5.ides.monitoring.pult.PultMonitoringReporter.startReporting(PultMonitoringReporter.java:315)
+	at com._1c.g5.ides.monitoring.pult.PultMonitoringReporter.start(PultMonitoringReporter.java:157)
+	at com._1c.g5.v8.dt.internal.core.monitoring.MonitoringManager.startup(MonitoringManager.java:229)
+	at com._1c.g5.v8.dt.internal.core.monitoring.MonitoringManager.activate(MonitoringManager.java:110)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.wiring.InjectorAwareServiceRegistrator.activateManagedService(InjectorAwareServiceRegistrator.java:203)
+	at com._1c.g5.v8.dt.internal.core.V8CorePlugin.lambda$1(V8CorePlugin.java:352)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:279)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1736)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: com._1c.g5.ides.monitoring.internal.pult.PultClientException: 1C:Pult request error occurred
+	at com._1c.g5.ides.monitoring.internal.pult.PultHttpClient.sendPultRequest(PultHttpClient.java:266)
+	at com._1c.g5.ides.monitoring.internal.pult.PultHttpClient.sendPultPackageRequest(PultHttpClient.java:208)
+	at com._1c.g5.ides.monitoring.internal.pult.PultHttpClient.sendGetSettingsRequest(PultHttpClient.java:123)
+	at com._1c.g5.ides.monitoring.pult.PultMonitoringReporter.getMonitoringSettings(PultMonitoringReporter.java:338)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at com._1c.g5.ides.monitoring.pult.PultMonitoringReporter.startReporting(PultMonitoringReporter.java:301)
+	... 11 more
+Caused by: java.io.IOException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:565)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at com._1c.g5.ides.monitoring.internal.pult.PultHttpClient.sendPultRequest(PultHttpClient.java:252)
+	... 16 more
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:353)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:296)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:443)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1076)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1063)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1010)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(SSLFlowDelegate.java:1073)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:153)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(SSLFlowDelegate.java:1068)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate.java:1034)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:442)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:264)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run(SequentialScheduler.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:147)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(SequentialScheduler.java:315)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:198)
+	... 3 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:313)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:276)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:141)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1335)
+	... 23 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 29 more
+
+!ENTRY com._1c.g5.v8.dt.cli.api.impl 1 0 2024-02-14 19:59:28.857
+!MESSAGE Importing project from configuration files
+
+!ENTRY com._1c.g5.v8.dt.cli.api.impl 1 0 2024-02-14 19:59:36.858
+!MESSAGE Project import is complete
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2024-02-14 19:59:42.237
+!MESSAGE All known SSH connectons released
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-14 19:59:43.869
+!MESSAGE The workspace will exit with unsaved changes in this session.

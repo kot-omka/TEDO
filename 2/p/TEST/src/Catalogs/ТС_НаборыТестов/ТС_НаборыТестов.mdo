@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdb768ac-a665-4e2b-a7d1-4f3b7baa515c">
+  <producedTypes>
+    <objectType typeId="da9c00f7-4e14-49b9-8997-c3b69572770e" valueTypeId="4731f9d7-3c07-401e-8dc8-ab73976dd30c"/>
+    <refType typeId="2f2c7322-70c5-44b0-9ae2-83fc672ac8d5" valueTypeId="537997e8-306f-4212-b8d0-9c457d0e11c7"/>
+    <selectionType typeId="b345af54-4fb6-45d6-bafb-e8d9f4fd6e3f" valueTypeId="4331754f-0e80-45c2-8a13-58dba3af0b20"/>
+    <listType typeId="1d225277-7881-451b-93ee-00b83d58d9c9" valueTypeId="13c3b045-1340-4ba0-a846-801120f276db"/>
+    <managerType typeId="f0bceae2-9933-4359-b3e5-349d5f386b0c" valueTypeId="6088ef8e-0de8-465a-aff5-6762338cc309"/>
+  </producedTypes>
+  <name>ТС_НаборыТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наборы тестов</value>
+  </synonym>
+  <comment>Наборы тестов для разового тестирования в рамках данного курса</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТС_НаборыТестов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТС_НаборыТестов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ТС_РезультатТестирования</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Набор тестов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Наборы тестов</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ТС_Курсы</owners>
+  <subordinationUse>ToFoldersAndItems</subordinationUse>
+  <codeLength>11</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТС_НаборыТестов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ТС_НаборыТестов.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ТС_НаборыТестов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТС_НаборыТестов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="11a46dcb-1ef5-446b-8123-3e5b79ea2b6f">
+    <name>ВключатьУстаревшие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включать устаревшие</value>
+    </synonym>
+    <comment>Признак того, что в наборе тестов будут использоваться устаревшие тесты</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ee0ef6e-bb8c-43a7-bc33-b44432bb0b57">
+    <name>ОбменID</name>
+    <synonym>
+      <key>ru</key>
+      <value>(Обмен) ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c2aa50e-1de0-4c4f-8a55-9c5437ccb453">
+    <name>удКомментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уд комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33fd050c-99c0-4598-9e3a-59cdbd73aa0e">
+    <name>Раздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>Catalog.ТС_НаборыТестов.StandardAttribute.Owner</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0c41a2c9-23ee-4bec-973a-433ca73edad7">
+    <name>ТолькоАктуальные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только актуальные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="14ffe823-1ed2-4344-a8a7-c01bff72cf83">
+    <producedTypes>
+      <objectType typeId="fa97af7c-dca3-43b4-be07-a22a4d9fce62" valueTypeId="886ebcdd-2701-4899-a39b-f9f010b3f40e"/>
+      <rowType typeId="13a7b7d3-dd6d-4725-9b67-9de9b7bca7b2" valueTypeId="65fb9b9e-f063-4060-b8b5-d9f6361063b1"/>
+    </producedTypes>
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <attributes uuid="d1f73a80-0dec-491d-b08b-56c25bc146ba">
+      <name>Тест</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тест</value>
+      </synonym>
+      <comment>Тест</comment>
+      <type>
+        <types>CatalogRef.ТС_Тесты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <changeMode>DontChange</changeMode>
+        <field>Catalog.ТС_НаборыТестов.StandardAttribute.Owner</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1ce05641-f40e-4ea4-9f04-9ae598cbdfd1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c7c0acd-ae6e-45af-8f15-b20075800b09">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1d62a878-7e90-425d-9d9b-8775412334d5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="579a661e-443d-4b03-afee-3fafac29af50">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ebc873bc-5bb5-4307-baed-84ee9c8afc05">
+    <name>ОткрытьФормуСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наборы тестов</value>
+    </synonym>
+    <group>CommandGroup.ТС_Справочники</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

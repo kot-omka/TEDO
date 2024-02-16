@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37fe289f-de92-4cdf-bdac-d20d799c9455">
+  <name>ТС_Подтверждение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтверждение</value>
+  </synonym>
+</mdclass:CommonPicture>

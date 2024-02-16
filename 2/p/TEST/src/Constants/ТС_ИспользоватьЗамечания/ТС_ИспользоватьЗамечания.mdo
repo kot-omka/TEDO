@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2949159c-6068-45b1-bcc4-11447a35f418">
+  <producedTypes>
+    <managerType typeId="2e9f24c0-159f-436a-9fb0-f465c8b32cc3" valueTypeId="c68fbd09-76fb-4cef-a55f-958315014aa6"/>
+    <valueManagerType typeId="4d752a9a-6741-406f-9ea9-111f9d77385e" valueTypeId="08aeaf4e-e2c0-4216-9ee4-84916493bdd4"/>
+    <valueKeyType typeId="1773cbff-7658-526f-8758-8845b97566dc" valueTypeId="cc518fa3-2902-5334-9bf4-af4a432c2299"/>
+  </producedTypes>
+  <name>ТС_ИспользоватьЗамечания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать замечания</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

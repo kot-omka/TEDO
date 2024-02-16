@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2b79cb4-3d88-42b6-b282-082f9653ee06">
+  <producedTypes>
+    <objectType typeId="1e9169f0-e9d5-43bb-8fa6-e0ee6d21f1e3" valueTypeId="dd20693a-872b-4359-ac07-080ad3fa8342"/>
+    <managerType typeId="a197fb89-66de-42d2-a6a0-261ece897ca3" valueTypeId="2d0c64c9-1941-410c-b23a-43c9715069b9"/>
+  </producedTypes>
+  <name>ТС_ПерезаполнитьНаборыТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перезаполнить наборы тестов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТС_ПерезаполнитьНаборыТестов.Form.Форма</defaultForm>
+  <forms uuid="ad76a9ef-7faf-4158-b77f-59ee434a1699">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

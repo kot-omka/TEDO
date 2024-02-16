@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="303457c3-dd0e-4eff-a8a6-e5ad310da3a7">
+  <producedTypes>
+    <objectType typeId="a9c7e927-54a4-474e-9bef-a6c90a784476" valueTypeId="37bc5ccd-2dd6-443f-b993-f5981f209b12"/>
+    <managerType typeId="36eae4b8-dc14-430e-86a4-e0b5e55fb385" valueTypeId="4d5e13c3-ab8b-44b7-99e2-7472c346acbe"/>
+  </producedTypes>
+  <name>ПодготовкаКЗагрузкеТестовЧерезСайт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подготовка к загрузке тестов через сайт</value>
+  </synonym>
+  <comment>В этой обраотке будет выполнятся код, который необходим для выполнения загрузки вопросов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПодготовкаКЗагрузкеТестовЧерезСайт.Form.Форма</defaultForm>
+  <forms uuid="2cf2c142-84e0-40ef-be5f-a7cac8e117b3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

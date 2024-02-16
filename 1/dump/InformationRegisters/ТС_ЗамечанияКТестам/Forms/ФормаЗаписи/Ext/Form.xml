@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Курс" id="1">
+			<DataPath>Запись.Курс</DataPath>
+			<ContextMenu name="КурсКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Тест" id="4">
+			<DataPath>Запись.Тест</DataPath>
+			<ContextMenu name="ТестКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Инициатор" id="7">
+			<DataPath>Запись.Инициатор</DataPath>
+			<ContextMenu name="ИнициаторКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Вид" id="13">
+			<DataPath>Запись.Вид</DataPath>
+			<ContextMenu name="ВидКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Описание" id="16">
+			<DataPath>Запись.Описание</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<TitleLocation>Left</TitleLocation>
+			<Width>50</Width>
+			<Height>3</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="ГруппаИсполнен" id="25">
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ТС_ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ТС_РедактированиеСправочников">true</xr:Value>
+				<xr:Value name="Role.ТС_Тестирование">false</xr:Value>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа исполнен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа исполнен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИсполненРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<CheckBoxField name="Исполнен" id="19">
+					<DataPath>Запись.Исполнен</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИсполненКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИсполненРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ИсполненПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Модератор" id="27">
+					<DataPath>Запись.Модератор</DataPath>
+					<ContextMenu name="МодераторКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="МодераторРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ТС_ЗамечанияКТестам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="edb6dda4-3479-4512-b6e5-02267388b47f">
+  <name>ТС_НаборыТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наборы тестов</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьНаборыТестов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ТС_НаборыТестов</content>
+  <content>InformationRegister.ТС_РезультатыТестирований.Dimension.НаборТестов</content>
+</mdclass:FunctionalOption>

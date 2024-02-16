@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b43ffdf7-29a5-4fc2-a5a3-4bdf284dd833">
+  <producedTypes>
+    <managerType typeId="ca3ac72b-b0d0-4720-8bd7-1e0a0127222a" valueTypeId="5d2fc286-00da-48e7-b6e9-a0ce7ce66b3e"/>
+    <valueManagerType typeId="64a6a900-e276-481f-80c2-da19f46ef929" valueTypeId="f317a1e1-d6cb-44fb-b32a-e2eb752dd2cb"/>
+    <valueKeyType typeId="d8bf1a8b-d3e8-5bdd-89ab-9da3ded007ab" valueTypeId="446d0761-5bee-53b0-9f7b-2e9f5326dc4d"/>
+  </producedTypes>
+  <name>ТС_ТекущаяВерсияКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущая версия конфигурации</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

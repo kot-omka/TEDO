@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36a8b243-df6d-48c5-aafa-1b30a7891ddb">
+  <name>ОбновлениеТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление тестов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ПараметрыФормированияЗапросаДляОбновленияТестов</content>
+  <content>DataProcessor.ЗагрузкаТестовЧерезСайт</content>
+  <content>DataProcessor.ПодготовкаКЗагрузкеТестовЧерезСайт</content>
+  <content>DataProcessor.ЗагрузкаРазделаКурса</content>
+  <parentSubsystem>Subsystem.ТС_Администрирование</parentSubsystem>
+</mdclass:Subsystem>

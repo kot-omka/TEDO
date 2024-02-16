@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c232e80-7dad-4ef9-8a9d-4318fa8594d7">
+  <name>ТС_Отчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ТС_Отчеты</picture>
+  </picture>
+  <content>Report.ТС_РезультатыТестирования</content>
+  <content>Report.ТС_СпискиТестов</content>
+  <content>CommonCommand.ПоказатьИзменения</content>
+  <content>Report.КоличествоВопросов</content>
+  <content>Report.ПравильныеОтветыПоТестам</content>
+</mdclass:Subsystem>

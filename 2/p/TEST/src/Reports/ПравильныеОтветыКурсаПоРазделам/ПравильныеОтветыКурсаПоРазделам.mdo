@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e840693-9ce3-438d-b284-e70e4e884206">
+  <producedTypes>
+    <objectType typeId="6f86b621-a197-4d91-b0e8-6b99d32f0421" valueTypeId="13263e9a-4386-48ef-9aaa-3b1f37c5d6d4"/>
+    <managerType typeId="0b4ca95f-79fb-40fa-89aa-d660ec808dc2" valueTypeId="fcaec46d-c370-4c7d-b041-63ae18217b74"/>
+  </producedTypes>
+  <name>ПравильныеОтветыКурсаПоРазделам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правильные ответы курса по раздела</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПравильныеОтветыКурсаПоРазделам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПравильныеОтветыКурсаПоРазделам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="0c5d2d8d-ebd0-4245-b1ac-c2d7ddfc8848">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f98e00bf-f13d-46c4-8972-8dd74337c29b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

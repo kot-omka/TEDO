@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<CommandsVisibility>
+		<Command name="DataProcessor.ТС_Тестирование.Command.НачатьТестирование">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.Тестирование2.Command.НачатьТестирование2_0">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанныхJSON.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ТС_ПерезаполнитьНаборыТестов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуЭлемента">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ТС_РезультатТестирования.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_Курсы.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_Тесты.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_НаборыТестов.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_ПрограммыОбучения.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ПравильныеОтветы_Устаревшие.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ТС_СпискиТестов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПоказатьИзменения">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.ТС_ОсновнаяФормаКонстант.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ТС_НастройкиПользователя">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуСписка">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанных.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаТестов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ТС_ОткрытьОбратнуюСвязь">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОчиститьИзбранныеТесты.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.ТС_Тестирование.Command.НачатьТестирование">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.Тестирование2.Command.НачатьТестирование2_0">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанныхJSON.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ТС_ПерезаполнитьНаборыТестов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуЭлемента">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ТС_РезультатТестирования.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_Курсы.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_Тесты.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_НаборыТестов.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_ПрограммыОбучения.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ПравильныеОтветы_Устаревшие.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ТС_СпискиТестов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ПоказатьИзменения">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonForm.ТС_ОсновнаяФормаКонстант.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ТС_НастройкиПользователя">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаТестов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ТС_ОткрытьОбратнуюСвязь">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ОчиститьИзбранныеТесты.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DataProcessor.ТС_Тестирование.Command.НачатьТестирование">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.Тестирование2.Command.НачатьТестирование2_0">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанныхJSON.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТС_ПерезаполнитьНаборыТестов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуЭлемента">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Document.ТС_РезультатТестирования.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТС_ИзбранныеТесты.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТС_ЗамечанияКТестам.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Тестирование</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_Курсы.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_Тесты.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_НаборыТестов.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_ПрограммыОбучения.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Справочники</CommandGroup>
+		</Command>
+		<Command name="Report.ПравильныеОтветы_Устаревшие.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ТС_СпискиТестов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПоказатьИзменения">
+			<CommandGroup>CommandGroup.ТС_Отчеты</CommandGroup>
+		</Command>
+		<Command name="CommonForm.ТС_ОсновнаяФормаКонстант.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ТС_НастройкиПользователя">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="Catalog.ТС_Пользователи.Command.ОткрытьФормуСписка">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТС_ЗагрузкаДанных.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаТестов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ТС_ОткрытьОбратнуюСвязь">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОчиститьИзбранныеТесты.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ТС_Сервис</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.ТС_Тестирование</Group>
+		<Group>CommandGroup.ТС_Справочники</Group>
+		<Group>CommandGroup.ТС_Отчеты</Group>
+		<Group>CommandGroup.ТС_Сервис</Group>
+	</GroupsOrder>
+</CommandInterface>

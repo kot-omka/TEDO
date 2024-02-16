@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a662acf1-b146-47c1-a2d0-60e9af361c6e">
+  <name>ТС_ЗамечениеПравить</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замечение править</value>
+  </synonym>
+</mdclass:CommonPicture>

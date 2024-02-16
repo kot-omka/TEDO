@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af845c46-5673-4e0d-87ea-7ea7a4acce93">
+  <producedTypes>
+    <managerType typeId="74ea536f-c188-475b-8a4f-0c537679e82b" valueTypeId="93908198-790d-4a93-8720-36c864aae50b"/>
+    <valueManagerType typeId="b4f0d1af-9b1f-4871-942a-17a033206045" valueTypeId="355288b8-af01-4586-aeb8-51ef93100082"/>
+    <valueKeyType typeId="797cc132-74f1-535c-b32a-55bf0939551f" valueTypeId="b4e16a7c-5cb5-5189-974c-4e0d86a7105d"/>
+  </producedTypes>
+  <name>ТС_ВебПутьДляБиблиотек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Web-путь для библиотек</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

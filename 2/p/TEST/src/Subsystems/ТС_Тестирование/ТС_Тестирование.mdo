@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddcb2f5b-1820-49a3-b4fb-f5d0286ec0ce">
+  <name>ТС_Тестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ТС_Тестирование</picture>
+  </picture>
+  <content>Document.ТС_РезультатТестирования</content>
+  <content>DataProcessor.ТС_Тестирование</content>
+  <content>FunctionalOption.ТС_НаборыТестов</content>
+  <content>InformationRegister.ТС_РезультатыТестирований</content>
+  <content>CommonPicture.ТС_ЗамечаниеПрочее</content>
+  <content>CommonPicture.ТС_ЗамечаниеДобавить</content>
+  <content>CommonPicture.ТС_ЗамечениеПравить</content>
+  <content>CommonPicture.ТС_ЗамечаниеВопрос</content>
+  <content>CommonPicture.ТС_ЗамечаниеОшибка</content>
+  <content>CommonPicture.ТС_Обновить</content>
+  <content>CommonPicture.ТС_Настройки</content>
+  <content>CommonPicture.ТС_Новый</content>
+  <content>CommonPicture.ТС_Следующий</content>
+  <content>CommonPicture.ТС_Подтверждение</content>
+  <content>InformationRegister.ТС_ИзбранныеТесты</content>
+  <content>FunctionalOption.ТС_ИзбранныеТесты</content>
+  <content>CommonPicture.ТС_Избранное</content>
+  <content>CommonPicture.ТС_ИзбранноеПомещен</content>
+  <content>FunctionalOption.ТС_ОбменСДругимиСистемами</content>
+  <content>InformationRegister.ТС_ЗамечанияКТестам</content>
+  <content>DataProcessor.Тестирование2</content>
+  <content>Catalog.ТС_Пользователи</content>
+</mdclass:Subsystem>

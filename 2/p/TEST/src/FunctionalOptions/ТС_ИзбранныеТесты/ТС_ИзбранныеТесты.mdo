@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b950391a-858d-4438-bf9f-dd1006dc0957">
+  <name>ТС_ИзбранныеТесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Избранные тесты</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьИзбранныеТесты</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.ТС_ИзбранныеТесты</content>
+  <content>Catalog.ТС_Пользователи.Attribute.ДобавлятьОшибочныеВИзбранные</content>
+</mdclass:FunctionalOption>

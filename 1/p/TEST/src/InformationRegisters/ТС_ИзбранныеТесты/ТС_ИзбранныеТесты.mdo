@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7170ae47-e1b5-4360-b089-fdede664b94f">
+  <producedTypes>
+    <selectionType typeId="769e6547-d50c-49d7-a81f-cb5f32c3d347" valueTypeId="395c0b02-9589-4142-9b47-8ff131c58a48"/>
+    <listType typeId="f847c7c2-4639-4c3f-9013-4588d44b823c" valueTypeId="9554b760-dbe3-4429-bb95-1eee9556c080"/>
+    <managerType typeId="57ec0f52-7094-4b1a-a072-0f96bf770f00" valueTypeId="f6eabb80-4752-4cdc-b294-5850e4ce5365"/>
+    <recordSetType typeId="8d37f935-310c-4cc3-9ced-68eb72124fa3" valueTypeId="f1d6108b-9331-40b6-bcee-b4fb9bb42094"/>
+    <recordKeyType typeId="5c98131c-d5d6-4d22-ac9c-708e2447974b" valueTypeId="b0a81d67-1c03-4d10-aeef-e68ab90765ab"/>
+    <recordType typeId="b3d958e5-02f9-4af6-a1ff-a33631832bf5" valueTypeId="42a4e2e1-8094-4bad-aa39-601cc49e9662"/>
+    <recordManagerType typeId="325346c2-c767-4a75-99ea-190084939d0a" valueTypeId="b0122274-0443-4152-893b-df3b093b9a1b"/>
+  </producedTypes>
+  <name>ТС_ИзбранныеТесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Избранные тесты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ТС_ИзбранныеТесты.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="380c10ef-1675-48e1-b316-0a7daf9c3c1c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4392f06c-f22c-4917-b3c0-c11cec458fa7">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7c1f5e1c-45df-4556-8cf8-9eec07090896">
+    <name>Тест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тест</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ТС_ИзбранныеТесты.Dimension.Курс</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1a847f9a-8874-4de8-9d1e-f029652d9035">
+    <name>Авто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован автоматически</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4e895694-5d09-4551-b81c-3e9b3b51a2cb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="93df95a2-fc91-46e3-8a76-04d8acd1d45a">
+    <name>ОткрытьФормуСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Избранные тесты</value>
+    </synonym>
+    <group>CommandGroup.ТС_Тестирование</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

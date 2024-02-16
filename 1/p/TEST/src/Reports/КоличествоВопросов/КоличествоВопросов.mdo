@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="380ed552-f775-4aff-a70f-1f58a86be6a7">
+  <producedTypes>
+    <objectType typeId="152191f1-691b-4f41-8b23-3a9787de726f" valueTypeId="b90be796-4c23-4e6d-a2f7-be7a840e9ffb"/>
+    <managerType typeId="794eb05f-48dc-4daa-94c6-ffbd4424d295" valueTypeId="4128280a-e464-4d6f-aeae-f5fd1fee3f8d"/>
+  </producedTypes>
+  <name>КоличествоВопросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество вопросов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.КоличествоВопросов.Template.Макет</mainDataCompositionSchema>
+  <templates uuid="4e144817-e7a6-4733-8148-5a2718fda5df">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e0d878e1-e6cd-4aa8-a152-6671039a6b05">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

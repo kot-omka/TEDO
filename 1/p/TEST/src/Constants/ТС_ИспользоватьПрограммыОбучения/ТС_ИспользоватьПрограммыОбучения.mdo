@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de2406ac-71e1-4bc1-ac0c-3728690f0cca">
+  <producedTypes>
+    <managerType typeId="ead6df86-50db-42a7-9bdb-cdcd741c6349" valueTypeId="52da2aea-2789-43b7-8475-86270fe37d73"/>
+    <valueManagerType typeId="573e7b8c-e511-4fb3-ae02-5402cab71498" valueTypeId="57760fee-4003-4fec-9a1d-3bbd679b04cb"/>
+    <valueKeyType typeId="464e9cd6-4d29-57ff-b28c-4b759c774d27" valueTypeId="f938d829-dcb1-506e-8227-9ec1898b581c"/>
+  </producedTypes>
+  <name>ТС_ИспользоватьПрограммыОбучения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать программы обучения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Normal</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ГруппаКнопки11" id="54">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки верх 1</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки11</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопки11РасширеннаяПодсказка" id="55"/>
+				<ChildItems>
+					<Button name="ПредыдущийТест" id="9">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ПредыдущийТест</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;&lt; Предыдущий</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+						<ExtendedTooltip name="ПредыдущийТестРасширеннаяПодсказка" id="10"/>
+					</Button>
+					<Button name="ПроверитьТест" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПроверитьТест</CommandName>
+						<ExtendedTooltip name="ПроверитьТестРасширеннаяПодсказка" id="49"/>
+					</Button>
+					<Button name="СледующийТест" id="7">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.СледующийТест</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Следующий &gt;&gt;</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+						<ExtendedTooltip name="СледующийТестРасширеннаяПодсказка" id="8"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<ButtonGroup name="ГруппаКнопки12" id="56">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки верх 2</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки12</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопки12РасширеннаяПодсказка" id="57"/>
+				<ChildItems>
+					<Button name="ЗавершитьТест" id="15">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ЗавершитьТест</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Завершить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ЗавершитьТестРасширеннаяПодсказка" id="16"/>
+					</Button>
+					<Button name="Закрыть" id="20">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.StandardCommand.Close</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Close</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+						<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="21"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="14"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
+		</Pages>
+		<CommandBar name="ГруппаКнопкиНиз" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки низ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки низ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаКнопкиНизРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<ButtonGroup name="ГруппаКнопки21" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки низ 1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки21</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКнопки21РасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<Button name="ПредыдущийТест2" id="37">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПредыдущийТест</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;&lt; Предыдущий</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПредыдущийТест2РасширеннаяПодсказка" id="38"/>
+						</Button>
+						<Button name="ПроверитьТест2" id="50">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПроверитьТест</CommandName>
+							<ExtendedTooltip name="ПроверитьТест2РасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="СледующийТест2" id="39">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СледующийТест</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Следующий &gt;&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СледующийТест2РасширеннаяПодсказка" id="40"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+				<ButtonGroup name="ГруппаКнопки22" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки низ 2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки22</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКнопки22РасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Button name="ЗавершитьТест2" id="41">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ЗавершитьТест</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Завершить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗавершитьТест2РасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="Закрыть2" id="46">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<ExtendedTooltip name="Закрыть2РасширеннаяПодсказка" id="47"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="Группа1" id="66">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<Button name="ВыбратьОтвет1" id="68">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет1</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет1РасширеннаяПодсказка" id="69"/>
+				</Button>
+				<Button name="ВыбратьОтвет2" id="70">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет2</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет2РасширеннаяПодсказка" id="71"/>
+				</Button>
+				<Button name="ВыбратьОтвет3" id="72">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет3</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет3РасширеннаяПодсказка" id="73"/>
+				</Button>
+				<Button name="ВыбратьОтвет4" id="74">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет4</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет4РасширеннаяПодсказка" id="75"/>
+				</Button>
+				<Button name="ВыбратьОтвет5" id="76">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет5</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет5РасширеннаяПодсказка" id="77"/>
+				</Button>
+				<Button name="ВыбратьОтвет6" id="78">
+					<Type>UsualButton</Type>
+					<Width>2</Width>
+					<CommandName>Form.Command.ВыбратьОтвет6</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>6</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВыбратьОтвет6РасширеннаяПодсказка" id="79"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФункции" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа функции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа функции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФункцииРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Button name="ОткрытьТест" id="31">
+					<Type>UsualButton</Type>
+					<UserVisible>
+						<xr:Common>true</xr:Common>
+						<xr:Value name="Role.ТС_ПолныеПрава">true</xr:Value>
+						<xr:Value name="Role.ТС_РедактированиеСправочников">true</xr:Value>
+						<xr:Value name="Role.ТС_ПросмотрСправочников">false</xr:Value>
+						<xr:Value name="Role.ТС_Тестирование">false</xr:Value>
+						<xr:Value name="Role.ТС_ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+					</UserVisible>
+					<Representation>Picture</Representation>
+					<Width>5</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ОткрытьТест</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ТС_Просмотреть</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть форму теста</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьТестРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<Button name="ВвестиЗамечание" id="27">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>5</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ВвестиЗамечание</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ТС_ЗамечаниеДобавить</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввести замечание для теста</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВвестиЗамечаниеРасширеннаяПодсказка" id="28"/>
+				</Button>
+				<Button name="ДобавитьВИзбранное" id="33">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>5</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ДобавитьВИзбранное</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ТС_Избранное</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ДобавитьВИзбранноеРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="ВывестиПодтверждение" id="29">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>5</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ВывестиПодтверждение</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ТС_Подтверждение</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать подтверждения для теста</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ВывестиПодтверждениеРасширеннаяПодсказка" id="30"/>
+				</Button>
+				<Button name="ПоказатьПодсказку" id="64">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>5</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ПоказатьПодсказку</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ТС_Подсказка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать подсказку к тесту</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПоказатьПодсказкуРасширеннаяПодсказка" id="65"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="РезультатТестирования" id="22">
+			<Font ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="РезультатТестированияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="РезультатТестированияРасширеннаяПодсказка" id="24"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТС_Тестирование</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВсегоТестов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего тестов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоСтрок" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего строк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МножественныеОтветы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Множественные ответы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимТестирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереходитьКСледующемуПриВыборе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переходить к следующему при выборе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеВыделятьОтмеченныеТесты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не выделять отмеченные тесты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеВыделятьОтмеченныеТестыТолькоДляВебКлиента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не выделять отмеченные тесты только для веб клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрыватьФормуТестированияВНовомОкне" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открывать форму тестирования в новом окне</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрыватьФормуТестированияВНовомОкнеТолькоДляВебКлиента" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открывать форму тестирования в новом окне только для веб клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШиринаФормыТестирования" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ширина формы тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШиринаФормыТестированияТолькоДляВебКлиента" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ширина формы тестирования только для веб клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрытВВебКлиенте" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыт в веб клиенте</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверятьТестПриВыборе" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверять тест при выборе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СледующийТест" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к следующему тесту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Space</Shortcut>
+			<Action>СледующийТест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПредыдущийТест" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к предыдущему тесту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПредыдущийТест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗавершитьТест" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить тест, и узнать результат.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьТест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВвестиЗамечание" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести замечание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести замечание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВвестиЗамечание</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ТС_Замечания</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВывестиПодтверждение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести подтверждение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести подтверждение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиПодтверждение</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ТС_Подтверждения</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьТест" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьТест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьВИзбранное" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в избранное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в избранное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВИзбранное</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ТС_ИзбранныеТесты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьТест" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьТест</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьПодсказку" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать подсказку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать подсказку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПодсказку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет1" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 1</Shortcut>
+			<Action>ВыбратьОтвет1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет2" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 2</Shortcut>
+			<Action>ВыбратьОтвет2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет3" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ3</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 3</Shortcut>
+			<Action>ВыбратьОтвет3</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет4" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ4</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ4</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 4</Shortcut>
+			<Action>ВыбратьОтвет4</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет5" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ5</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ5</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 5</Shortcut>
+			<Action>ВыбратьОтвет5</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьОтвет6" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ6</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать ответ6</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Num 6</Shortcut>
+			<Action>ВыбратьОтвет6</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

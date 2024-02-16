@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62f8dbd9-d288-432b-8db9-1b960b512add">
+  <producedTypes>
+    <objectType typeId="d1846f9a-8afa-4a47-b8c9-7dfef88eb7fd" valueTypeId="7b79554d-8b8e-4a46-9a20-85c77c6ce6b0"/>
+    <refType typeId="42598cb0-4d18-45f3-8a0f-9131874e2dc5" valueTypeId="0d432aee-96a1-4b37-ba61-af4500541bd7"/>
+    <selectionType typeId="3282bf74-b08b-41bb-9271-f5d598dd7138" valueTypeId="8de52acc-1d4c-4a25-9fe8-a9b711d98102"/>
+    <listType typeId="4b500313-4aeb-4b04-9c51-8f9c3c13abca" valueTypeId="b275b63b-ed4f-4872-964c-787ff874167d"/>
+    <managerType typeId="533b8495-3e44-4877-9fff-138677f28a99" valueTypeId="5056ed3d-b847-41a0-8650-bcdce3eb568d"/>
+  </producedTypes>
+  <name>ТС_РезультатТестирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результат тестирования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ТС_РезультатТестирования.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Результат тестирования</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Результаты тестирований</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>5</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ТС_РезультатТестирования.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ТС_РезультатТестирования.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.ТС_РезультатыТестирований</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8b1ff6f0-bef2-403d-95d1-8cb2cf8cff40">
+    <name>НомерТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер тестирования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f5b67bb0-be43-44e3-bc7f-8b63f1187f60">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Курсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd46ac2c-e84c-41aa-b73f-d31eee3d8906">
+    <name>НаборТестов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор тестов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_НаборыТестов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ТС_РезультатТестирования.Attribute.Курс</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78c4dc6d-be3d-4585-a419-3f93ab7fc05d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43063a9c-cbe7-4ad1-89da-f0074cd7f21e">
+    <name>ПрограммаОбучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Программа обучения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС_ПрограммыОбучения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ТС_РезультатТестирования.Attribute.Курс</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63450195-e55f-460d-b7f2-9aa129be76be">
+    <name>НомерЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер этапа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="02f8fa4e-0616-40db-bcea-5d88ecd5c62c">
+    <name>ЭтоПодтверждениеОтвета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это подтверждение ответа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fd3b54d-e28b-4308-8f64-1c6b653ac62e">
+    <name>ОбменID</name>
+    <synonym>
+      <key>ru</key>
+      <value>(Обмен) ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18f5f785-68fb-4c86-baad-8c93ce0a8905">
+    <name>КоличествоОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ca7d51c9-6662-4b9a-aaa3-74e23a70f2a7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9dcaaa79-1ce2-42b7-8679-9348313bd0aa">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="43bbdaa3-0b15-49b5-a66d-1258b036dd17">
+    <producedTypes>
+      <objectType typeId="d72f5bd6-a709-4858-9f69-fad811040a4a" valueTypeId="793bc56a-c908-498b-8d00-2a8a2640f03e"/>
+      <rowType typeId="cbd0af36-073a-43be-89be-bcda9214d704" valueTypeId="8a4eed83-120f-48fe-9aa0-648572f89af6"/>
+    </producedTypes>
+    <name>Тесты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тесты</value>
+    </synonym>
+    <attributes uuid="fb01b21d-962d-4d28-9005-f4ae04f70c46">
+      <name>Тест</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тест</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТС_Тесты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.ТС_РезультатТестирования.Attribute.Курс</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="574ebc2d-2495-4be8-9e4d-d170a402792c">
+      <name>Ответ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="50f8d757-b185-47a6-a552-d0ccc764472f">
+      <name>Правильный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Правильный</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="dfa28357-f3ad-4586-ad70-a6c42a2ba2f3">
+    <name>ОткрытьФормуСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты тестирований</value>
+    </synonym>
+    <group>CommandGroup.ТС_Тестирование</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

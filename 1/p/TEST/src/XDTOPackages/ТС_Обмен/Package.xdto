@@ -1,0 +1,91 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="ТС_Обмен">
+	<valueType name="GUID" base="xs:string" variety="Atomic" maxLength="36"/>
+	<valueType name="Булево" base="xs:boolean" variety="Atomic"/>
+	<valueType name="ДвоичныеДанные" base="xs:base64Binary" variety="Atomic"/>
+	<valueType name="Строка" base="xs:string" variety="Atomic"/>
+	<valueType name="Строка_5" base="xs:string" variety="Atomic" maxLength="5"/>
+	<valueType name="Строка_8" base="xs:string" variety="Atomic" maxLength="8"/>
+	<valueType name="Строка_11" base="xs:string" variety="Atomic" maxLength="11"/>
+	<valueType name="Строка_50" base="xs:string" variety="Atomic" maxLength="50"/>
+	<valueType name="Строка_100" base="xs:string" variety="Atomic" maxLength="100"/>
+	<valueType name="Строка_150" base="xs:string" variety="Atomic" maxLength="150"/>
+	<valueType name="Число_4_0" base="xs:decimal" totalDigits="4" fractionDigits="0"/>
+	<valueType name="Дата" base="xs:date" variety="Atomic"/>
+	<objectType name="ПередаваемыеДанные">
+		<property name="ОбъектДанных" type="xs:anyType" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ТС_Курсы">
+		<property xmlns:d3p1="ТС_Обмен" name="ТипОбъекта" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="GUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Код" type="d3p1:Строка_5"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Наименование" type="d3p1:Строка_100"/>
+		<property xmlns:d3p1="ТС_Обмен" name="РодительGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ЭтоГруппа" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПометкаУдаления" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="МножественныеОтветы" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="КоличествоТестовНаСтранице" type="d3p1:Число_4_0"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Устаревший" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ДатаАктуальности" type="d3p1:Дата"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ТС_Комментарий" type="d3p1:Строка"/>
+	</objectType>
+	<objectType name="ТС_Файлы">
+		<property xmlns:d3p1="ТС_Обмен" name="ТипОбъекта" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="GUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Код" type="d3p1:Строка_8"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Наименование" type="d3p1:Строка_50"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПометкаУдаления" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Изображение" type="d3p1:ДвоичныеДанные"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ТС_Комментарий" type="d3p1:Строка"/>
+	</objectType>
+	<objectType name="ТС_ТестыОтветы">
+		<property xmlns:d3p1="ТС_Обмен" name="Ответ" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Правильный" type="d3p1:Булево"/>
+	</objectType>
+	<objectType name="ТС_Тесты">
+		<property xmlns:d3p1="ТС_Обмен" name="ТипОбъекта" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="GUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Код" type="d3p1:Строка_5"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Наименование" type="d3p1:Строка_150"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ВладелецGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="РодительGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ЭтоГруппа" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПометкаУдаления" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Вопрос" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Устаревший" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Подсказка" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПеремешиватьОтветы" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Описание" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ТС_Комментарий" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Ответы" type="d3p1:ТС_ТестыОтветы" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ИзображениеGUID" type="d3p1:GUID"/>
+	</objectType>
+	<objectType name="ТС_НаборыТестовСодержание">
+		<property xmlns:d3p1="ТС_Обмен" name="ТестGUID" type="d3p1:GUID"/>
+	</objectType>
+	<objectType name="ТС_НаборыТестов">
+		<property xmlns:d3p1="ТС_Обмен" name="ТипОбъекта" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="GUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Код" type="d3p1:Строка_11"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Наименование" type="d3p1:Строка_50"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ВладелецGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="РодительGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ЭтоГруппа" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПометкаУдаления" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ВключатьУстаревшие" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ТС_Комментарий" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Содержание" type="d3p1:ТС_НаборыТестовСодержание" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ТС_ПрограммыОбученияСостав">
+		<property name="НаборТестовGUID"/>
+	</objectType>
+	<objectType name="ТС_ПрограммыОбучения">
+		<property xmlns:d3p1="ТС_Обмен" name="ТипОбъекта" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="GUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Код" type="d3p1:Строка_5"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Наименование" type="d3p1:Строка_150"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ВладелецGUID" type="d3p1:GUID"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ПометкаУдаления" type="d3p1:Булево"/>
+		<property xmlns:d3p1="ТС_Обмен" name="ТС_Комментарий" type="d3p1:Строка"/>
+		<property xmlns:d3p1="ТС_Обмен" name="Состав" type="d3p1:ТС_ПрограммыОбученияСостав" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+</package>

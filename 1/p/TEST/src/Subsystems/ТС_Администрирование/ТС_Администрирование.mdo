@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e218164-15a5-4192-ad6b-7be601b10960">
+  <name>ТС_Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ТС_Администрирование</picture>
+  </picture>
+  <content>Catalog.ТС_Пользователи</content>
+  <content>Catalog.ТС_Файлы</content>
+  <content>CommonForm.ТС_ОсновнаяФормаКонстант</content>
+  <content>FunctionalOption.ТС_Подтверждения</content>
+  <content>Constant.ТС_ИспользоватьПодтверждения</content>
+  <content>Constant.ТС_ИспользоватьНаборыТестов</content>
+  <content>Constant.ТС_ИспользоватьЗамечания</content>
+  <content>Enum.ТС_ВидыЗамечаний</content>
+  <content>Constant.ТС_ИспользоватьПрограммыОбучения</content>
+  <content>Constant.ТС_ИспользоватьИзбранныеТесты</content>
+  <content>Constant.ТС_ВебПутьДляБиблиотек</content>
+  <content>Constant.ТС_ТекущаяВерсияКонфигурации</content>
+  <content>CommandGroup.ТС_Сервис</content>
+  <content>CommonCommand.ТС_НастройкиПользователя</content>
+  <content>CommonPicture.ТС_Подсказка</content>
+  <content>DataProcessor.ОчиститьИзбранныеТесты</content>
+  <content>InformationRegister.ПараметрыТестированияПользователя</content>
+  <content>DataProcessor.ВыполнитьЗаполнениеПеремешиванияОтветов</content>
+  <subsystems>ОбновлениеТестов</subsystems>
+</mdclass:Subsystem>

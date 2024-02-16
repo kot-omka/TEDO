@@ -1,0 +1,1276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаФоновоеЗадание" id="125">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа фоновое задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа фоновое задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФоновоеЗаданиеРасширеннаяПодсказка" id="126"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияКартинка" id="127">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияКартинкаКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="ДекорацияКартинкаРасширеннаяПодсказка" id="129"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияВыполняетсяФоновоеЗадание" id="130">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполняется фоновое задание. 
+Подождите пожалуйста!</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияВыполняетсяФоновоеЗаданиеКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ДекорацияВыполняетсяФоновоеЗаданиеРасширеннаяПодсказка" id="132"/>
+				</LabelDecoration>
+				<LabelDecoration name="Отменить" id="133">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отменить</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ОтменитьКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="135"/>
+					<Events>
+						<Event name="Click">ОтменитьНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Page name="Параметры" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<UsualGroup name="ПараметрыЗапроса" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры запроса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры запроса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="2"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗагрузкаДанных" id="31">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка данных</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка данных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗагрузкаДанныхРасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<InputField name="ТипСайта" id="15">
+											<DataPath>Объект.ТипСайта</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>10</MaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:string">dist</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:string">free</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипСайтаКонтекстноеМеню" id="16"/>
+											<ExtendedTooltip name="ТипСайтаРасширеннаяПодсказка" id="17"/>
+											<Events>
+												<Event name="OnChange">ТипСайтаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="JsessionID" id="3">
+											<DataPath>Объект.JsessionID</DataPath>
+											<ContextMenu name="JsessionIDКонтекстноеМеню" id="4"/>
+											<ExtendedTooltip name="JsessionIDРасширеннаяПодсказка" id="5"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Сервер" id="139">
+									<DataPath>Сервер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сайт</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СерверКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="141"/>
+								</InputField>
+								<UsualGroup name="ГруппаКурс" id="27">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа курс</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа курс</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКурсРасширеннаяПодсказка" id="28"/>
+									<ChildItems>
+										<InputField name="Курс" id="6">
+											<DataPath>Объект.Курс</DataPath>
+											<ContextMenu name="КурсКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="8"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРаздел" id="33">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры раздела</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры раздела</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаРазделРасширеннаяПодсказка" id="34"/>
+									<ChildItems>
+										<InputField name="Раздел" id="9">
+											<DataPath>Объект.Раздел</DataPath>
+											<ContextMenu name="РазделКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="РазделРасширеннаяПодсказка" id="11"/>
+											<Events>
+												<Event name="OnChange">РазделПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="DL_RES" id="12">
+											<DataPath>Объект.DL_RES</DataPath>
+											<ContextMenu name="DL_RESКонтекстноеМеню" id="13"/>
+											<ExtendedTooltip name="DL_RESРасширеннаяПодсказка" id="14"/>
+										</InputField>
+										<InputField name="НомерРаздела" id="18">
+											<DataPath>Объект.НомерРаздела</DataPath>
+											<ContextMenu name="НомерРазделаКонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="НомерРазделаРасширеннаяПодсказка" id="20"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрыПолученияДанныхОТесте" id="35">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры получения данных о тесте</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры получения данных о тесте</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаПараметрыПолученияДанныхОТестеРасширеннаяПодсказка" id="36"/>
+									<ChildItems>
+										<Button name="ЗаполнитьПараметрыИзКурса" id="29">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ЗаполнитьПараметрыИзКурса</CommandName>
+											<ExtendedTooltip name="ЗаполнитьПараметрыИзКурсаРасширеннаяПодсказка" id="30"/>
+										</Button>
+										<UsualGroup name="Группа1" id="44">
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="45"/>
+											<ChildItems>
+												<CheckBoxField name="ДваСимвола" id="41">
+													<DataPath>Объект.ДваСимвола</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Два символа в номере раздела</v8:content>
+														</v8:item>
+													</Title>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДваСимволаКонтекстноеМеню" id="42"/>
+													<ExtendedTooltip name="ДваСимволаРасширеннаяПодсказка" id="43"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ДопПараметрГруппы" id="21">
+											<DataPath>Объект.ДопПараметрРаздела</DataPath>
+											<ContextMenu name="ДопПараметрГруппыКонтекстноеМеню" id="22"/>
+											<ExtendedTooltip name="ДопПараметрГруппыРасширеннаяПодсказка" id="23"/>
+										</InputField>
+										<InputField name="Предприятие" id="24">
+											<DataPath>Объект.Предприятие</DataPath>
+											<ContextMenu name="ПредприятиеКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="ПредприятиеРасширеннаяПодсказка" id="26"/>
+										</InputField>
+										<CheckBoxField name="УменьшитьНаименованиеПредприятия" id="136">
+											<DataPath>Объект.УменьшитьНаименованиеПредприятия</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="УменьшитьНаименованиеПредприятияКонтекстноеМеню" id="137"/>
+											<ExtendedTooltip name="УменьшитьНаименованиеПредприятияРасширеннаяПодсказка" id="138"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ФормаПолучитьДанные" id="37">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПолучитьДанные</CommandName>
+									<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="38"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗагрузкаДанныхССайта" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка данных с сайта</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка данных с сайта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗагрузкаДанныхССайтаРасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<Table name="ДеревоДанныеЗагрузки" id="52">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоДанныеЗагрузки</DataPath>
+							<ContextMenu name="ДеревоДанныеЗагрузкиКонтекстноеМеню" id="53"/>
+							<AutoCommandBar name="ДеревоДанныеЗагрузкиКоманднаяПанель" id="54">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ФормаСохранитьРезультат" id="39">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СохранитьРезультат</CommandName>
+										<TextColor>style:FieldTextColor</TextColor>
+										<BackColor>style:ImportantColor</BackColor>
+										<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+										<ExtendedTooltip name="ФормаСохранитьРезультатРасширеннаяПодсказка" id="40"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоДанныеЗагрузкиРасширеннаяПодсказка" id="55"/>
+							<SearchStringAddition name="ДеревоДанныеЗагрузкиСтрокаПоиска" id="56">
+								<AdditionSource>
+									<Item>ДеревоДанныеЗагрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДанныеЗагрузкиСтрокаПоискаКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ДеревоДанныеЗагрузкиСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоДанныеЗагрузкиСостояниеПросмотра" id="59">
+								<AdditionSource>
+									<Item>ДеревоДанныеЗагрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДанныеЗагрузкиСостояниеПросмотраКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ДеревоДанныеЗагрузкиСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоДанныеЗагрузкиУправлениеПоиском" id="62">
+								<AdditionSource>
+									<Item>ДеревоДанныеЗагрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДанныеЗагрузкиУправлениеПоискомКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ДеревоДанныеЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДеревоДанныеЗагрузкиКурс" id="119">
+									<DataPath>ДеревоДанныеЗагрузки.Курс</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиКурсКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиКурсРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиРаздел" id="65">
+									<DataPath>ДеревоДанныеЗагрузки.Раздел</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиРазделКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиРазделРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиВопросВБазе" id="68">
+									<DataPath>ДеревоДанныеЗагрузки.ВопросВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиВопросВБазеКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиВопросВБазеРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиВопросНаСайте" id="71">
+									<DataPath>ДеревоДанныеЗагрузки.ВопросНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиВопросНаСайтеКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиВопросНаСайтеРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиОтветНаСайте" id="74">
+									<DataPath>ДеревоДанныеЗагрузки.ОтветНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиОтветНаСайтеКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиОтветНаСайтеРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиОтветВБазе" id="77">
+									<DataPath>ДеревоДанныеЗагрузки.ОтветВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиОтветВБазеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиОтветВБазеРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиПравильныйОтветНаСайте" id="80">
+									<DataPath>ДеревоДанныеЗагрузки.ПравильныйОтветНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиПравильныйОтветНаСайтеКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиПравильныйОтветНаСайтеРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиПравильныйОтветВБазе" id="83">
+									<DataPath>ДеревоДанныеЗагрузки.ПравильныйОтветВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиПравильныйОтветВБазеКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиПравильныйОтветВБазеРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<CheckBoxField name="ДеревоДанныеЗагрузкиЕстьКартинкаВБазе" id="86">
+									<DataPath>ДеревоДанныеЗагрузки.ЕстьКартинкаВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоДанныеЗагрузкиЕстьКартинкаВБазеКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиЕстьКартинкаВБазеРасширеннаяПодсказка" id="88"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоДанныеЗагрузкиЕстьКартинкаНаСайте" id="89">
+									<DataPath>ДеревоДанныеЗагрузки.ЕстьКартинкаНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоДанныеЗагрузкиЕстьКартинкаНаСайтеКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиЕстьКартинкаНаСайтеРасширеннаяПодсказка" id="91"/>
+								</CheckBoxField>
+								<InputField name="ДеревоДанныеЗагрузкиТестСсылка" id="92">
+									<DataPath>ДеревоДанныеЗагрузки.ТестСсылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиТестСсылкаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиТестСсылкаРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиПодсказкаВБазе" id="95">
+									<DataPath>ДеревоДанныеЗагрузки.ПодсказкаВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиПодсказкаВБазеКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиПодсказкаВБазеРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиПодсказкаНаСайте" id="98">
+									<DataPath>ДеревоДанныеЗагрузки.ПодсказкаНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиПодсказкаНаСайтеКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиПодсказкаНаСайтеРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиВопрос" id="101">
+									<DataPath>ДеревоДанныеЗагрузки.Вопрос</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиВопросКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиВопросРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиКоличествоВопросовНаСайте" id="104">
+									<DataPath>ДеревоДанныеЗагрузки.КоличествоВопросовНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиКоличествоВопросовНаСайтеКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиКоличествоВопросовНаСайтеРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиКоличествоВопросовВБазе" id="107">
+									<DataPath>ДеревоДанныеЗагрузки.КоличествоВопросовВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиКоличествоВопросовВБазеКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиКоличествоВопросовВБазеРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиИдентификаторВопроса" id="110">
+									<DataPath>ДеревоДанныеЗагрузки.ИдентификаторВопроса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиИдентификаторВопросаКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиИдентификаторВопросаРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиНомерВопросаВБазе" id="113">
+									<DataPath>ДеревоДанныеЗагрузки.НомерВопросаВБазе</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиНомерВопросаВБазеКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиНомерВопросаВБазеРасширеннаяПодсказка" id="115"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиНомерВопросаНаСайте" id="116">
+									<DataPath>ДеревоДанныеЗагрузки.НомерВопросаНаСайте</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиНомерВопросаНаСайтеКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиНомерВопросаНаСайтеРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="ДеревоДанныеЗагрузкиНомерРаздела" id="122">
+									<DataPath>ДеревоДанныеЗагрузки.НомерРаздела</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДанныеЗагрузкиНомерРазделаКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ДеревоДанныеЗагрузкиНомерРазделаРасширеннаяПодсказка" id="124"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаРазделаКурса</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОтветыНаВопросы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответы на вопросы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Идентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ответ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Правильный" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правильный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗагружаемыеВопросы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружаемые вопросы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Вопрос" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьКартинка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подсказка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКартинки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстЗапроса" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерВопроса" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер вопроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Раздел" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТС_Тесты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерИВопрос" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер и вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерРаздела" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер раздела</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Курс" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТС_Курсы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоДанныеЗагрузки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево данные загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Раздел" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТС_Тесты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВопросВБазе" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВопросНаСайте" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветНаСайте" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветВБазе" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПравильныйОтветНаСайте" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правильный ответ на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПравильныйОтветВБазе" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правильный ответ в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьКартинкаВБазе" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть картинка в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьКартинкаНаСайте" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть картинка на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТестСсылка" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тест ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТС_Тесты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодсказкаВБазе" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодсказкаНаСайте" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вопрос" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоВопросовНаСайте" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество вопросов на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоВопросовВБазе" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество вопросов в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторВопроса" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор вопроса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерВопросаВБазе" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер вопроса в базе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерВопросаНаСайте" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер вопроса на сайте</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Курс" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТС_Курсы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерРаздела" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер раздела</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресВременногоХранилища" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес временного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сайт" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сайт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сервер" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ВопросВБазе</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ВопросНаСайте</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ВопросВБазе</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ВопросНаСайте</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ImportantColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузкиОтветНаСайте</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузкиОтветВБазе</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветНаСайте</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветВБазе</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветНаСайте</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветВБазе</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ImportantColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветНаСайте</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветВБазе</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ОтветНаСайте</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ButtonBorderColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузкиОтветНаСайте</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ПравильныйОтветНаСайте</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Да</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#4BDD19</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоДанныеЗагрузки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ПравильныйОтветНаСайте</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ПравильныйОтветВБазе</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоДанныеЗагрузки.ПравильныйОтветВБазе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Да</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПараметрыИзКурса" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры получения данных о тесте из курса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры из курса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПараметрыИзКурса</Action>
+		</Command>
+		<Command name="ПолучитьДанные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанные</Action>
+		</Command>
+		<Command name="СохранитьРезультат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьРезультат</Action>
+		</Command>
+	</Commands>
+</Form>

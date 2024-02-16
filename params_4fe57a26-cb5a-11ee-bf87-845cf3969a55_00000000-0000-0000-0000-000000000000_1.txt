@@ -1,0 +1,4 @@
+CREATEINFOBASE File="c:\1C_REPO_EDT\report_db\" /DisableStartupDialogs /L ru /VL ru
+  
+ /DumpResult "c:\1C_REPO_EDT\result.txt"
+ /Out "c:\1C_REPO_EDT\log.txt" -NoTruncate

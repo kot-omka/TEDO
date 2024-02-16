@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddd542af-4348-4974-a8f0-a10ca54a36f2">
+  <name>ТС_ОбменСДругимиСистемами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с другими системами</value>
+  </synonym>
+  <location>Constant.ТС_ИспользоватьОбменСДругимиСистемами</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ТС_Тесты.Attribute.ОбменID</content>
+  <content>Catalog.ТС_НаборыТестов.Attribute.ОбменID</content>
+  <content>Document.ТС_РезультатТестирования.Attribute.ОбменID</content>
+</mdclass:FunctionalOption>

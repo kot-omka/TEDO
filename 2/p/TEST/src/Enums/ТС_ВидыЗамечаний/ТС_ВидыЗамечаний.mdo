@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2380acf8-c9d7-42f4-ae4d-73e1f3badeb1">
+  <producedTypes>
+    <refType typeId="f253d2d6-11dc-4de5-bfa5-5609ae5e3ff7" valueTypeId="dea87e66-833e-4f7e-ba5b-78ee8f6b3c49"/>
+    <listType typeId="1df6be6a-e747-449a-abc3-1107f8aab62f" valueTypeId="5946a648-cd83-4319-ad60-471491857781"/>
+    <managerType typeId="feee9b32-1aa5-46fd-8308-cd6f2bdc1df1" valueTypeId="f2f7fb03-48d7-4585-9250-fd7ae87e7b5c"/>
+  </producedTypes>
+  <name>ТС_ВидыЗамечаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды замечаний</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e4caec78-25bb-451e-ba40-815959f5ee7f">
+    <name>Опечатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опечатка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="14c39991-6a2b-4cf8-8550-fe24224ea570">
+    <name>НеверныйОтвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неверный ответ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fdf4f789-6c75-49cb-9fb4-8d4eb160fa53">
+    <name>Вопрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопрос</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ada88c22-710d-4c4c-8bcd-c57cac57b9e8">
+    <name>Прочее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="60">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="61"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="НомерДата" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НомерДатаРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="НомерТестирования" id="13">
+					<DataPath>Объект.НомерТестирования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерТестированияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НомерТестированияРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Курс" id="10">
+			<DataPath>Объект.Курс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КурсКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="НаборТестов" id="43">
+			<DataPath>Объект.НаборТестов</DataPath>
+			<ContextMenu name="НаборТестовКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="НаборТестовРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Пользователь" id="7">
+			<DataPath>Объект.Пользователь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<Page name="СтраницаТесты" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тесты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница тесты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаТестыРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<Table name="Тесты" id="16">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Тесты</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТестыКонтекстноеМеню" id="17"/>
+							<AutoCommandBar name="ТестыКоманднаяПанель" id="18">
+								<ChildItems>
+									<Button name="ТестыПодобрать" id="71">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ПодобратьТест</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Find</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подобрать</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ТестыПодобратьРасширеннаяПодсказка" id="72"/>
+									</Button>
+									<Button name="ТестыУстановитьПравильностьОтветов" id="83">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.УстановитьПравильностьОтветов</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ТС_ЗамечаниеВопрос</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТестыУстановитьПравильностьОтветовРасширеннаяПодсказка" id="84"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТестыРасширеннаяПодсказка" id="19"/>
+							<SearchStringAddition name="ТестыСтрокаПоиска" id="34">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыСтрокаПоискаКонтекстноеМеню" id="35"/>
+								<ExtendedTooltip name="ТестыСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТестыСостояниеПросмотра" id="37">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыСостояниеПросмотраКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="ТестыСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТестыУправлениеПоиском" id="40">
+								<AdditionSource>
+									<Item>Тесты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТестыУправлениеПоискомКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="ТестыУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТестыНомерСтроки" id="20">
+									<DataPath>Объект.Тесты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТестыНомерСтрокиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<InputField name="ТестыТест" id="23">
+									<DataPath>Объект.Тесты.Тест</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыТестКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТестыТестРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТестыОтветы" id="26">
+									<DataPath>Объект.Тесты.Ответ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТестыОтветыКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТестыОтветыРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<CheckBoxField name="ТестыВерныйОтвет" id="29">
+									<DataPath>Объект.Тесты.Правильный</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТестыВерныйОтветКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ТестыВерныйОтветРасширеннаяПодсказка" id="31"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПрограммаОбучения" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа программа обучения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа программа обучения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПрограммаОбученияРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<InputField name="ПрограммаОбучения" id="46">
+									<DataPath>Объект.ПрограммаОбучения</DataPath>
+									<ContextMenu name="ПрограммаОбученияКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ПрограммаОбученияРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="НомерЭтапа" id="51">
+									<DataPath>Объект.НомерЭтапа</DataPath>
+									<ContextMenu name="НомерЭтапаКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="НомерЭтапаРасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ЭтоПодтверждениеОтвета" id="80">
+							<DataPath>Объект.ЭтоПодтверждениеОтвета</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоПодтверждениеОтветаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ЭтоПодтверждениеОтветаРасширеннаяПодсказка" id="82"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаДействий" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа действий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа действий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДействийРасширеннаяПодсказка" id="68"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбмен" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбменРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="ОбменID" id="77">
+							<DataPath>Объект.ОбменID</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОбменIDКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ОбменIDРасширеннаяПодсказка" id="79"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="62">
+			<DataPath>Объект.ТС_Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="64"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ТС_РезультатТестирования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьПравильностьОтветов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить правильность ответов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить правильность ответов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПравильностьОтветов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ТС_Подтверждения</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодобратьТест" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодобратьТест</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ТС_Подтверждения</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ТС_РезультатыТестирований.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>
